@@ -662,6 +662,7 @@ public class CommonSteps {
 						case "xpath":
 							setElement.setElementByXpath("TEXT", data.get(i).get(1), data.get(i).get(0));
 							break;
+							
 						}
 						break;
 					}

@@ -1,17 +1,25 @@
-18/04/2019 09:41:29 LOG -------------Going to Put a URL to the browser which is opened
-18/04/2019 09:41:39 LOG -------------URL Loaded successfully
-18/04/2019 09:41:39 LOG -------------Going to fill the username and passwords to the fields
-18/04/2019 09:41:39 LOG Verify fill search criteria of Loyal Login
-18/04/2019 09:41:41 LOG Successfully filled search criteria of Loyal Login
-18/04/2019 09:41:41 LOG -------------filled the username and passwords to the fields successfully
-18/04/2019 09:41:41 LOG -------------Click on the Login button to login to the system
-18/04/2019 09:41:42 LOG Verify click Login button in Loyal page
-18/04/2019 09:41:42 LOG Successfully clicked Login button in Loyal page
-18/04/2019 09:41:43 LOG -------------Logged into the system successfully
-18/04/2019 09:41:43 LOG ------------Click on the Register client button on leftside menu bar
-18/04/2019 09:41:49 LOG Verify click Register client button in 
-18/04/2019 09:41:50 LOG Successfully clicked Register client button in 
-18/04/2019 09:41:50 LOG ------------Clicked on the Register client button on leftside menu bar successfully
-18/04/2019 09:41:50 LOG --------------------Fail to load Register client page
-18/04/2019 09:41:55 LOG Starting to send mail
-18/04/2019 09:42:07 LOG Finished send mail
+18/04/2019 17:52:14 LOG -------------Going to Put a URL to the browser which is opened
+18/04/2019 17:52:24 LOG -------------URL Loaded successfully
+18/04/2019 17:52:24 LOG -------------Going to fill the username and passwords to the fields
+18/04/2019 17:52:24 LOG Verify fill search criteria of Loyal Login
+18/04/2019 17:52:25 LOG Successfully filled search criteria of Loyal Login
+18/04/2019 17:52:25 LOG -------------filled the username and passwords to the fields successfully
+18/04/2019 17:52:25 LOG -------------Click on the Login button to login to the system
+18/04/2019 17:52:26 LOG Verify click Login button in Loyal page
+18/04/2019 17:52:27 LOG Successfully clicked Login button in Loyal page
+18/04/2019 17:52:28 LOG -------------Logged into the system successfully
+18/04/2019 17:52:28 LOG ------------Click on the Register client button on leftside menu bar
+18/04/2019 17:52:34 LOG Verify click Register client button in 
+18/04/2019 17:52:34 LOG Successfully clicked Register client button in 
+18/04/2019 17:52:34 LOG ------------Clicked on the Register client button on leftside menu bar successfully
+18/04/2019 17:52:36 LOG --------------------register client page loaded successfully
+18/04/2019 17:52:36 LOG -------------Going to fill the Parent name to the field to create a new parent
+18/04/2019 17:52:36 LOG Verify fill search criteria of 
+18/04/2019 17:52:37 LOG Successfully filled search criteria of 
+18/04/2019 17:52:37 LOG -------------Filled the Parent name to the field successfully
+18/04/2019 17:52:37 LOG ------------Click on the Register client button on leftside menu bar
+18/04/2019 17:52:43 LOG Verify click Add new Parent button in 
+18/04/2019 17:52:43 LOG Successfully clicked Add new Parent button in 
+18/04/2019 17:52:43 LOG ------------Clicked on the Register client button on leftside menu bar successfully
+18/04/2019 17:52:46 LOG Starting to send mail
+18/04/2019 17:52:58 LOG Finished send mail

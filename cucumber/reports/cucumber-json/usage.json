@@ -5,13 +5,49 @@
       {
         "name": "I Should see the Loyal login page loaded sucessfullyy",
         "aggregatedDurations": {
-          "average": 1.0277595,
-          "median": 1.0277595
+          "average": 1.0253427,
+          "median": 1.0253427
         },
         "durations": [
           {
-            "duration": 1.0277595,
+            "duration": 1.0253427,
             "location": "B_RegisterClient.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I Fill the \"([^\"]*)\" details to create a new parent$",
+    "steps": [
+      {
+        "name": "I Fill the \"Register new parent\" details to create a new parent",
+        "aggregatedDurations": {
+          "average": 0.0001144,
+          "median": 0.0001144
+        },
+        "durations": [
+          {
+            "duration": 0.0001144,
+            "location": "B_RegisterClient.feature:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^\"([^\"]*)\" Tab should enable after click the Add new parent button$",
+    "steps": [
+      {
+        "name": "\"Register new parent\" Tab should enable after click the Add new parent button",
+        "aggregatedDurations": {
+          "average": 0.0001315,
+          "median": 0.0001315
+        },
+        "durations": [
+          {
+            "duration": 0.0001315,
+            "location": "B_RegisterClient.feature:16"
           }
         ]
       }
@@ -23,13 +59,31 @@
       {
         "name": "I should click the \"Login\" button to login to the \"Loyal page\"",
         "aggregatedDurations": {
-          "average": 1.2764849,
-          "median": 1.2764849
+          "average": 1.2272034,
+          "median": 1.2272034
         },
         "durations": [
           {
-            "duration": 1.2764849,
+            "duration": 1.2272034,
             "location": "A_LoginToLoyal.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I fill the \"([^\"]*)\" details to create a new Parent$",
+    "steps": [
+      {
+        "name": "I fill the \"Find parent\" details to create a new Parent",
+        "aggregatedDurations": {
+          "average": 0.5934241,
+          "median": 0.5934241
+        },
+        "durations": [
+          {
+            "duration": 0.5934241,
+            "location": "B_RegisterClient.feature:9"
           }
         ]
       }
@@ -41,13 +95,67 @@
       {
         "name": "I should click on \"Register client\" button on left side menu",
         "aggregatedDurations": {
-          "average": 6.2520602,
-          "median": 6.2520602
+          "average": 6.3357915,
+          "median": 6.3357915
         },
         "durations": [
           {
-            "duration": 6.2520602,
+            "duration": 6.3357915,
             "location": "B_RegisterClient.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on the \"([^\"]*)\" button to add a new parent$",
+    "steps": [
+      {
+        "name": "I click on the \"Add new Parent\" button to add a new parent",
+        "aggregatedDurations": {
+          "average": 6.234329,
+          "median": 6.234329
+        },
+        "durations": [
+          {
+            "duration": 6.234329,
+            "location": "B_RegisterClient.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I should redirect to the Register Client page successfullyy$",
+    "steps": [
+      {
+        "name": "I should redirect to the Register Client page successfullyy",
+        "aggregatedDurations": {
+          "average": 2.0499553,
+          "median": 2.0499553
+        },
+        "durations": [
+          {
+            "duration": 2.0499553,
+            "location": "B_RegisterClient.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on the \"([^\"]*)\" button to create a new parent$",
+    "steps": [
+      {
+        "name": "I click on the \"Save\" button to create a new parent",
+        "aggregatedDurations": {
+          "average": 0.000174,
+          "median": 0.000174
+        },
+        "durations": [
+          {
+            "duration": 0.000174,
+            "location": "B_RegisterClient.feature:20"
           }
         ]
       }
@@ -59,13 +167,31 @@
       {
         "name": "I should load \"\" the URL of \"Loyal Login\" URL to the Browser",
         "aggregatedDurations": {
-          "average": 12.0045702,
-          "median": 12.0045702
+          "average": 11.678426,
+          "median": 11.678426
         },
         "durations": [
           {
-            "duration": 12.0045702,
+            "duration": 11.678426,
             "location": "A_LoginToLoyal.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I should see the newly enabled \"([^\"]*)\" label on left hand side$",
+    "steps": [
+      {
+        "name": "I should see the newly enabled \"No parent record found?\" label on left hand side",
+        "aggregatedDurations": {
+          "average": 0.0001224,
+          "median": 0.0001224
+        },
+        "durations": [
+          {
+            "duration": 0.0001224,
+            "location": "B_RegisterClient.feature:12"
           }
         ]
       }
