@@ -1,0 +1,41 @@
+Feature: Login to iadmin application through the iAdmin login page
+
+  Scenario: Login to Iadmin Application
+    And I Click the "test" icon
+    Then I should see the "Add IPG Terminal" page
+    Given I am at "iAdmin" Home Page
+    Then I should see "iAdmin" Home Page
+    And I click on "IPG Terminal Management" icon to back
+    And I Click on Button "Submit2"
+    And I click the link "Details"
+    Then I Check for Success Message "POS reapplied successfully" in "Reapply IPG Terminal"
+    Then I Check for Failed Message "No records found for the search criteria" in "Approve IPG Terminal"
+    Then I should see the "Applicationn Menu" Application Page
+    And I click on square icon  on corner
+    And I Click the "Applications Menu" icon on Application Page
+    Given I click on Home Page
+    Given I Click the "Maintainance" icon to "IPG Terminal Management"
+    Given I Click "IPG195" function id icon to "Blacklisted Card Management"
+    Given I Click the "Approve Merchant" icon in "Merchant Commission"
+    Then I should see the "Maintainance" page to "IPG Terminal Management"
+    And I "fill" data criteria of "iPay Home Page"
+      | Element     | value   | option | ElementType |
+      | user_id     | madhuka | Name   | Textbox     |
+    And I click on "Login" button in "Admin Login"
+      | Element                 | option |
+      | //input[@value='Login'] | xpath  |
+    And I close the console
+    And I verify "Merchant User Registration Form" title in "Merchant On Boad"
+    And I upload file in "On Bord Register new user"
+      | Elemet      | Path                      | Option |
+      | fileUpload  | \\config\\Document\\1.jpg | Name   |
+     Then I call verify method
+      | Alias   | SQL                                                                                                     | Expected Row Count |
+      | ISWITCH | select count(*) from swt_dr_term where term_id = '90019977' and bank_code = '0001' and status_code = 12 |                  1 |
+    Given I am login to the FTP server
+    Then I should be connected to the ftp server successfully
+    And I Upload the File to the Server by giving the path
+    Given I am login to the putty server
+    Then I should be connected to the putty server successfully
+    And I Run the "./RUN" jar file
+    

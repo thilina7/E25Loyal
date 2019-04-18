@@ -1,0 +1,23 @@
+Feature: Login to iadmin application through the iAdmin login page
+
+  Scenario: Login to Iadmin Application
+    Given I am at "Admin" Login page to "Admin Login"
+    And I "fill" data criteria of "Admin Login"
+      | Element     | value   | option | ElementType |
+      | user_id     | madhuka | Name   | Textbox     |
+      | user_suffix |     000 | Name   | Textbox     |
+      | user_bank   |    0001 | Name   | Textbox     |
+    And I click on "Login" button in "Admin Login"
+      | Element                 | option |
+      | //input[@value='Login'] | xpath  |
+    And I "fill" data criteria of "Admin Login"
+      | Element  | value      | option | ElementType |
+      | password | PassworD2. | Name   | Textbox     |
+    And I click on "Login" button in "Admin Login"
+      | Element                 | option |
+      | //input[@value='Login'] | xpath  |
+    And Select the top frame in Application page
+    Then I should see the "Application Menu" Application Page
+
+  Scenario: Navigate to Pos Terminal
+    Given I am at "iAdmin" Home Page

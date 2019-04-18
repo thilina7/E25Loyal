@@ -1,0 +1,74 @@
+[
+  {
+    "source": "^I Should see the Loyal login page loaded sucessfullyy$",
+    "steps": [
+      {
+        "name": "I Should see the Loyal login page loaded sucessfullyy",
+        "aggregatedDurations": {
+          "average": 1.0277595,
+          "median": 1.0277595
+        },
+        "durations": [
+          {
+            "duration": 1.0277595,
+            "location": "B_RegisterClient.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I should click the \"([^\"]*)\" button to login to the \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I should click the \"Login\" button to login to the \"Loyal page\"",
+        "aggregatedDurations": {
+          "average": 1.2764849,
+          "median": 1.2764849
+        },
+        "durations": [
+          {
+            "duration": 1.2764849,
+            "location": "A_LoginToLoyal.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I should click on \"([^\"]*)\" button on left side menu$",
+    "steps": [
+      {
+        "name": "I should click on \"Register client\" button on left side menu",
+        "aggregatedDurations": {
+          "average": 6.2520602,
+          "median": 6.2520602
+        },
+        "durations": [
+          {
+            "duration": 6.2520602,
+            "location": "B_RegisterClient.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I should load \"([^\"]*)\" the URL of \"([^\"]*)\" URL to the Browser$",
+    "steps": [
+      {
+        "name": "I should load \"\" the URL of \"Loyal Login\" URL to the Browser",
+        "aggregatedDurations": {
+          "average": 12.0045702,
+          "median": 12.0045702
+        },
+        "durations": [
+          {
+            "duration": 12.0045702,
+            "location": "A_LoginToLoyal.feature:4"
+          }
+        ]
+      }
+    ]
+  }
+]
