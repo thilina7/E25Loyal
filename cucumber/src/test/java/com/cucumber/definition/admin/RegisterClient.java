@@ -2,6 +2,8 @@ package com.cucumber.definition.admin;
 
 import static org.junit.Assert.assertTrue;
 
+import java.util.concurrent.TimeUnit;
+
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -12,6 +14,7 @@ import com.cucumber.common.CommonSteps;
 import com.cucumber.common.ConfigFileReader;
 import com.cucumber.common.SetElements;
 import com.cucumber.common.WebDriverInitializer;
+import com.itextpdf.text.List;
 
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
@@ -156,17 +159,108 @@ public class RegisterClient {
 	@Then("^\"([^\"]*)\" Tab should enable after click the Add new parent button$")
 	public void tab_should_enable_after_click_the_Add_new_parent_button(String arg1) throws Throwable {
 	    
+		try {
+			System.out.println("------------I should see the newly enabled Add new parent tab");
+			log.debug("-------------I should see the newly enabled Add new parent tab");
+			Thread.sleep(2000);
+			if(webDriver.findElement(By.xpath("//h3[contains(text(),'Register New Parent')]")).getText().equalsIgnoreCase("Register New Parent")){
+				System.out.println("testinf             saaaaaaaaaaaaa "+webDriver.findElement(By.xpath("//h3[contains(text(),'Register New Parent')]")).getText());
+				System.out.println("--------------------enabled Add new parent tab successfully");
+				log.debug("--------------------enabled Add new parent tab successfully");
+				
+			}
+			else {
+				
+				log.debug("--------------------Fail to enabled Add new parent tab");
+				assertTrue("--------------------Fail to enabled Add new parent tab", false);
+				
+				
+				
+			}
+		  } catch (Exception e) {
+		  System.out.println("--------------------Fail to enabled Add new parent tab");
+		  log.error(e.getMessage(), e); 
+		  throw (e); 
+		  }
+		//.find-parent-wrapper
+		
 	}
 
 	@Then("^I Fill the \"([^\"]*)\" details to create a new parent$")
-	public void i_Fill_the_details_to_create_a_new_parent(String arg1, DataTable arg2) throws Throwable {
+	public void i_Fill_the_details_to_create_a_new_parent(String arg1, DataTable table) throws Throwable {
 	    
+		try {
+			
+			log.debug("-------------Going to fill the Parent name to the field to create a new parent");
+			commonSteps.dataCriteriaOf(arg1, "", table);
+			log.debug("-------------Filled the Parent name to the field successfully");
+			
+		} catch (Exception e) {
+
+			log.error(e.getMessage(), e);
+			throw (e);
+		}
+
+		
 	}
 
 	@Then("^I click on the \"([^\"]*)\" button to create a new parent$")
-	public void i_click_on_the_button_to_create_a_new_parent(String arg1, DataTable arg2) throws Throwable {
+	public void i_click_on_the_button_to_create_a_new_parent(String arg1, DataTable table) throws Throwable {
 	   
+		try {
+			System.out.println("------------Click on the save parent button");
+			log.debug("------------Click on the save parent button");
+			Thread.sleep(5000);
+			commonSteps.clickOnButtonIn(arg1, "", table);
+			log.debug("------------Save parent button clicked successfully");
+	
+		  } catch (Exception e) {
+		  System.out.println("--------------------fail to click Save parent button");
+		  log.error(e.getMessage(), e); 
+		  throw (e); 
+		  }
+		
 	}
+	
+	/*@Then("^I should see the \"([^\"]*)\" confirm the parent created sucessfully$")
+	public void i_should_see_the_confirm_the_parent_created_sucessfully(String arg1) throws Throwable {
+	   
+		try {
+			System.out.println("------------I should see the popup message");
+			log.debug("-------------I should see the popup message");
+			webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			if(webDriver.findElement(By.xpath("//p[contains(text(),'Parent successfully saved and invited')]")).getText().equalsIgnoreCase("Parent successfully saved and invited")){
+				System.out.println("--------------------popup message showing correctly and sucessfuly parent created");
+				log.debug("--------------------popup message showing correctly and sucessfuly parent created");
+				
+			}
+			else {
+				
+				log.debug("--------------------Fail to create a new parent");
+				assertTrue("--------------------Fail to create a new parent", false);
+				
+				
+				
+			}
+		  } catch (Exception e) {
+		  System.out.println("--------------------Fail to create a new parent");
+		  log.error(e.getMessage(), e); 
+		  throw (e); 
+		  }
+		
+	}
+*/
+	@Then("^I should see the \"([^\"]*)\" confirm the parent created sucessfully$")
+	public void i_should_see_the_confirm_the_parent_created_sucessfully(String arg1, DataTable Table) throws Throwable {
+	    
+		
+		
+		setElements.ValidationMessage(Table);
+		
+		
+	}
+
+
 
 
 }

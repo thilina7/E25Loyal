@@ -22,6 +22,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import cucumber.api.DataTable;
+
 public class SetElements {
 
 	// public static boolean exit = false;
@@ -1196,6 +1198,38 @@ public class SetElements {
 		// Switch back to original browser (first window)
 		driver.switchTo().window(winHandleBefore);
 		driver.switchTo().frame("topFrame");
+	}
+	
+	//Validation message method
+
+	public void ValidationMessage(DataTable Table) throws Exception{
+		
+		List<List<String>> Tableraw = Table.raw();
+		
+		
+		try {
+			System.out.println("------------I should see the popup message '"+Tableraw.get(1).get(2)+"'");
+			log.debug("-------------I should see the popup message "+Tableraw.get(1).get(2));
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			Thread.sleep(3000);
+			if(driver.findElement(By.xpath(Tableraw.get(1).get(0))).getText().equalsIgnoreCase(Tableraw.get(1).get(2))){
+				System.out.println("--------------------popup message '"+Tableraw.get(1).get(2)+"' showing correctly and its pass");
+				log.debug("--------------------popup message '"+Tableraw.get(1).get(2)+"' showing correctly and its pass");
+				
+			}
+			else {
+				
+				log.debug("--------------------Fail '"+Tableraw.get(1).get(2)+"'");
+				assertTrue("--------------------Fail '"+Tableraw.get(1).get(2)+"'", false);
+				
+				
+				
+			}
+		  } catch (Exception e) {
+		  System.out.println("--------------------Fail '"+Tableraw.get(1).get(2)+"'");
+		  log.error(e.getMessage(), e); 
+		  throw (e); 
+		  }
 	}
 
 }

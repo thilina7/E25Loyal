@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 9054863000,
+  "duration": 8944241103,
   "status": "passed"
 });
 formatter.scenario({
@@ -34,7 +34,7 @@ formatter.step({
     {
       "cells": [
         "username",
-        "thilina.r+2@eight25media.com",
+        "loyalstaff@eight25media.com",
         "Name",
         "Textbox"
       ],
@@ -43,7 +43,7 @@ formatter.step({
     {
       "cells": [
         "password",
-        "PassworD2.",
+        "staff123",
         "Name",
         "Textbox"
       ],
@@ -87,7 +87,7 @@ formatter.match({
   "location": "Loyal_Login.i_should_load_the_URL_of_URL_to_the_Browser(String,String,DataTable)"
 });
 formatter.result({
-  "duration": 11678426000,
+  "duration": 8773981979,
   "status": "passed"
 });
 formatter.match({
@@ -104,11 +104,11 @@ formatter.match({
   "location": "Loyal_Login.i_should_click_the_button_to_login_to_the(String,String,DataTable)"
 });
 formatter.result({
-  "duration": 1227203400,
+  "duration": 1205786649,
   "status": "passed"
 });
 formatter.after({
-  "duration": 11996800,
+  "duration": 11230484,
   "status": "passed"
 });
 formatter.uri("B_RegisterClient.feature");
@@ -120,7 +120,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 106800,
+  "duration": 53245,
   "status": "passed"
 });
 formatter.scenario({
@@ -233,18 +233,36 @@ formatter.step({
     },
     {
       "cells": [
-        "//*[contains(concat( \" \", @class, \" \" ), concat( \" \", \"form-control\", \" \" ))]",
-        "Henrry",
-        "xpath",
+        "firstName",
+        "Herrytt",
+        "name",
         "Textbox"
       ],
       "line": 19
+    },
+    {
+      "cells": [
+        "lastName",
+        "ollcottt",
+        "name",
+        "Textbox"
+      ],
+      "line": 20
+    },
+    {
+      "cells": [
+        "phoneEmail",
+        "e25mediatest+5@eight25media.com",
+        "name",
+        "Textbox"
+      ],
+      "line": 21
     }
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 20,
+  "line": 22,
   "name": "I click on the \"Save\" button to create a new parent",
   "rows": [
     {
@@ -252,14 +270,37 @@ formatter.step({
         "Element",
         "option"
       ],
-      "line": 21
+      "line": 23
     },
     {
       "cells": [
-        ".loyal-btn-save-update",
-        "cssselector"
+        "//button[@class\u003d\u0027btn loyal-btn-save-update\u0027]",
+        "xpath"
       ],
-      "line": 22
+      "line": 24
+    }
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 25,
+  "name": "I should see the \"Parent successfully saved and invited\" confirm the parent created sucessfully",
+  "rows": [
+    {
+      "cells": [
+        "Element",
+        "option",
+        "Validation message"
+      ],
+      "line": 26
+    },
+    {
+      "cells": [
+        "//p[contains(text(),\u0027Parent successfully saved and invited\u0027)]",
+        "xpath",
+        "Parent successfully saved and invited"
+      ],
+      "line": 27
     }
   ],
   "keyword": "And "
@@ -268,7 +309,7 @@ formatter.match({
   "location": "RegisterClient.i_Should_see_the_Loyal_login_page_loaded_sucessfullyy()"
 });
 formatter.result({
-  "duration": 1025342700,
+  "duration": 1020728562,
   "status": "passed"
 });
 formatter.match({
@@ -281,14 +322,14 @@ formatter.match({
   "location": "RegisterClient.i_should_click_on_button_on_left_side_menu(String,DataTable)"
 });
 formatter.result({
-  "duration": 6335791500,
+  "duration": 6238940359,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterClient.i_should_redirect_to_the_Register_Client_page_successfullyy()"
 });
 formatter.result({
-  "duration": 2049955300,
+  "duration": 2043069287,
   "status": "passed"
 });
 formatter.match({
@@ -301,7 +342,7 @@ formatter.match({
   "location": "RegisterClient.i_fill_the_details_to_create_a_new_Parent(String,DataTable)"
 });
 formatter.result({
-  "duration": 593424100,
+  "duration": 530319731,
   "status": "passed"
 });
 formatter.match({
@@ -314,7 +355,7 @@ formatter.match({
   "location": "RegisterClient.i_should_see_the_newly_enabled_label_on_left_hand_side(String)"
 });
 formatter.result({
-  "duration": 122400,
+  "duration": 98733,
   "status": "passed"
 });
 formatter.match({
@@ -327,7 +368,7 @@ formatter.match({
   "location": "RegisterClient.i_click_on_the_button_to_add_a_new_parent(String,DataTable)"
 });
 formatter.result({
-  "duration": 6234329000,
+  "duration": 6303359166,
   "status": "passed"
 });
 formatter.match({
@@ -340,7 +381,7 @@ formatter.match({
   "location": "RegisterClient.tab_should_enable_after_click_the_Add_new_parent_button(String)"
 });
 formatter.result({
-  "duration": 131500,
+  "duration": 2154252802,
   "status": "passed"
 });
 formatter.match({
@@ -353,7 +394,7 @@ formatter.match({
   "location": "RegisterClient.i_Fill_the_details_to_create_a_new_parent(String,DataTable)"
 });
 formatter.result({
-  "duration": 114400,
+  "duration": 1180768506,
   "status": "passed"
 });
 formatter.match({
@@ -366,11 +407,24 @@ formatter.match({
   "location": "RegisterClient.i_click_on_the_button_to_create_a_new_parent(String,DataTable)"
 });
 formatter.result({
-  "duration": 174000,
+  "duration": 6233727277,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Parent successfully saved and invited",
+      "offset": 18
+    }
+  ],
+  "location": "RegisterClient.i_should_see_the_confirm_the_parent_created_sucessfully(String,DataTable)"
+});
+formatter.result({
+  "duration": 3152527097,
   "status": "passed"
 });
 formatter.after({
-  "duration": 12696500,
+  "duration": 15309198,
   "status": "passed"
 });
 });

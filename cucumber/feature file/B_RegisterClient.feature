@@ -15,8 +15,13 @@ Feature: Regiter Client
       | .action | cssselector |
     Then "Register new parent" Tab should enable after click the Add new parent button
     And I Fill the "Register new parent" details to create a new parent
-      | Element                                                                       | value  | option | ElementType |
-      | //*[contains(concat( " ", @class, " " ), concat( " ", "form-control", " " ))] | Henrry | xpath  | Textbox     |
+      | Element    | value                           | option | ElementType |
+      | firstName  | Herrytt                         | name   | Textbox     |
+      | lastName   | ollcottt                          | name   | Textbox     |
+      | phoneEmail | e25mediatest+5@eight25media.com | name   | Textbox     |
     And I click on the "Save" button to create a new parent
-      | Element                | option      |
-      | .loyal-btn-save-update | cssselector |
+      | Element                                      | option |
+      | //button[@class='btn loyal-btn-save-update'] | xpath  |
+    And I should see the "Parent successfully saved and invited" confirm the parent created sucessfully
+      | Element                                                       | option | Validation message                    |
+      | //p[contains(text(),'Parent successfully saved and invited')] | xpath  | Parent successfully saved and invited |
