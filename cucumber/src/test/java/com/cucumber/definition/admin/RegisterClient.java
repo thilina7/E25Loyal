@@ -260,6 +260,14 @@ public class RegisterClient {
 		
 	}
 
+	@Then("^I should see the excel data \"([^\"]*)\"$")
+	public void i_should_see_the_excel_data(String sheet, DataTable arg2) throws Throwable {
+	
+		setElements.GetExcelValue(sheet);
+		System.out.println("search value ---------------->");
+		
+	
+	}
 
 
 

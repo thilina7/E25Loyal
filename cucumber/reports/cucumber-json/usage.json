@@ -5,67 +5,13 @@
       {
         "name": "I Should see the Loyal login page loaded sucessfullyy",
         "aggregatedDurations": {
-          "average": 1.020728562,
-          "median": 1.020728562
+          "average": 1.0295324,
+          "median": 1.0295324
         },
         "durations": [
           {
-            "duration": 1.020728562,
+            "duration": 1.0295324,
             "location": "B_RegisterClient.feature:4"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^I Fill the \"([^\"]*)\" details to create a new parent$",
-    "steps": [
-      {
-        "name": "I Fill the \"Register new parent\" details to create a new parent",
-        "aggregatedDurations": {
-          "average": 1.180768506,
-          "median": 1.180768506
-        },
-        "durations": [
-          {
-            "duration": 1.180768506,
-            "location": "B_RegisterClient.feature:17"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^\"([^\"]*)\" Tab should enable after click the Add new parent button$",
-    "steps": [
-      {
-        "name": "\"Register new parent\" Tab should enable after click the Add new parent button",
-        "aggregatedDurations": {
-          "average": 2.154252802,
-          "median": 2.154252802
-        },
-        "durations": [
-          {
-            "duration": 2.154252802,
-            "location": "B_RegisterClient.feature:16"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^I should see the \"([^\"]*)\" confirm the parent created sucessfully$",
-    "steps": [
-      {
-        "name": "I should see the \"Parent successfully saved and invited\" confirm the parent created sucessfully",
-        "aggregatedDurations": {
-          "average": 3.152527097,
-          "median": 3.152527097
-        },
-        "durations": [
-          {
-            "duration": 3.152527097,
-            "location": "B_RegisterClient.feature:25"
           }
         ]
       }
@@ -77,31 +23,13 @@
       {
         "name": "I should click the \"Login\" button to login to the \"Loyal page\"",
         "aggregatedDurations": {
-          "average": 1.205786649,
-          "median": 1.205786649
+          "average": 1.4602697,
+          "median": 1.4602697
         },
         "durations": [
           {
-            "duration": 1.205786649,
+            "duration": 1.4602697,
             "location": "A_LoginToLoyal.feature:8"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^I fill the \"([^\"]*)\" details to create a new Parent$",
-    "steps": [
-      {
-        "name": "I fill the \"Find parent\" details to create a new Parent",
-        "aggregatedDurations": {
-          "average": 0.530319731,
-          "median": 0.530319731
-        },
-        "durations": [
-          {
-            "duration": 0.530319731,
-            "location": "B_RegisterClient.feature:9"
           }
         ]
       }
@@ -113,31 +41,13 @@
       {
         "name": "I should click on \"Register client\" button on left side menu",
         "aggregatedDurations": {
-          "average": 6.238940359,
-          "median": 6.238940359
+          "average": 6.6758766,
+          "median": 6.6758766
         },
         "durations": [
           {
-            "duration": 6.238940359,
+            "duration": 6.6758766,
             "location": "B_RegisterClient.feature:5"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^I click on the \"([^\"]*)\" button to add a new parent$",
-    "steps": [
-      {
-        "name": "I click on the \"Add new Parent\" button to add a new parent",
-        "aggregatedDurations": {
-          "average": 6.303359166,
-          "median": 6.303359166
-        },
-        "durations": [
-          {
-            "duration": 6.303359166,
-            "location": "B_RegisterClient.feature:13"
           }
         ]
       }
@@ -149,31 +59,13 @@
       {
         "name": "I should redirect to the Register Client page successfullyy",
         "aggregatedDurations": {
-          "average": 2.043069287,
-          "median": 2.043069287
+          "average": 2.1310191,
+          "median": 2.1310191
         },
         "durations": [
           {
-            "duration": 2.043069287,
+            "duration": 2.1310191,
             "location": "B_RegisterClient.feature:8"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^I click on the \"([^\"]*)\" button to create a new parent$",
-    "steps": [
-      {
-        "name": "I click on the \"Save\" button to create a new parent",
-        "aggregatedDurations": {
-          "average": 6.233727277,
-          "median": 6.233727277
-        },
-        "durations": [
-          {
-            "duration": 6.233727277,
-            "location": "B_RegisterClient.feature:22"
           }
         ]
       }
@@ -185,12 +77,12 @@
       {
         "name": "I should load \"\" the URL of \"Loyal Login\" URL to the Browser",
         "aggregatedDurations": {
-          "average": 8.773981979,
-          "median": 8.773981979
+          "average": 22.836032,
+          "median": 22.836032
         },
         "durations": [
           {
-            "duration": 8.773981979,
+            "duration": 22.836032,
             "location": "A_LoginToLoyal.feature:4"
           }
         ]
@@ -198,18 +90,18 @@
     ]
   },
   {
-    "source": "^I should see the newly enabled \"([^\"]*)\" label on left hand side$",
+    "source": "^I should see the excel data \"([^\"]*)\"$",
     "steps": [
       {
-        "name": "I should see the newly enabled \"No parent record found?\" label on left hand side",
+        "name": "I should see the excel data \"4691690400007294\"",
         "aggregatedDurations": {
-          "average": 0.000098733,
-          "median": 0.000098733
+          "average": 0.9149346,
+          "median": 0.9149346
         },
         "durations": [
           {
-            "duration": 0.000098733,
-            "location": "B_RegisterClient.feature:12"
+            "duration": 0.9149346,
+            "location": "B_RegisterClient.feature:28"
           }
         ]
       }

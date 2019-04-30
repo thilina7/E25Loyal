@@ -3,6 +3,7 @@ package com.cucumber.common;
 import static org.junit.Assert.assertTrue;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -22,7 +23,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
+
 import cucumber.api.DataTable;
+import jxl.Sheet;
+import jxl.Workbook;
 
 public class SetElements {
 
@@ -1231,5 +1236,47 @@ public class SetElements {
 		  throw (e); 
 		  }
 	}
+	
+	//Get Excel values from the Excel
+	
+	public static String GetExcelValue(String searchValue1){
+		String sheet = "CardStatusReport";
+		 FileInputStream fs=null;
+	    	Workbook wb=null;
+		 try{
+		 
+			 String FilePath = Constants.REPORT_DATA_FILE_PATH;
+			 fs = new FileInputStream(FilePath);
+			 wb = Workbook.getWorkbook(fs);
+				Sheet sh = wb.getSheet(sheet);
+				int cols = sh.getColumns();
+				int rows = sh.getRows();
+				
+				// TO get the access to the sheet
+				for(int column=0;column<cols;column++){
+					
+					for (int row=0;row<rows;row++){
+						
+						String cellValue = sh.getCell(column, row).getContents();
+						
+						if(cellValue.equals(searchValue1)){
+							
+							//searchValue1 = sh.getCell((column+1), row).getContents();
+							searchValue1 = sh.getCell((column+1), row).getContents();
+							System.out.println("searchValue1--------->"+searchValue1);
+							return searchValue1;
+						
+						}
+						
+					}
+				}
+				
+		 }
+		 catch(Exception e){
+			 
+			 System.out.println(e);
+		 }
+		return searchValue1;
+	 }
 
 }

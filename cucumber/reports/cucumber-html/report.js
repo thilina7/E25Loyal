@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 8944241103,
+  "duration": 36851177300,
   "status": "passed"
 });
 formatter.scenario({
@@ -87,7 +87,7 @@ formatter.match({
   "location": "Loyal_Login.i_should_load_the_URL_of_URL_to_the_Browser(String,String,DataTable)"
 });
 formatter.result({
-  "duration": 8773981979,
+  "duration": 22836032000,
   "status": "passed"
 });
 formatter.match({
@@ -104,11 +104,11 @@ formatter.match({
   "location": "Loyal_Login.i_should_click_the_button_to_login_to_the(String,String,DataTable)"
 });
 formatter.result({
-  "duration": 1205786649,
+  "duration": 1460269700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 11230484,
+  "duration": 9970500,
   "status": "passed"
 });
 formatter.uri("B_RegisterClient.feature");
@@ -120,7 +120,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 53245,
+  "duration": 68500,
   "status": "passed"
 });
 formatter.scenario({
@@ -163,144 +163,92 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 9,
-  "name": "I fill the \"Find parent\" details to create a new Parent",
-  "rows": [
+  "comments": [
     {
-      "cells": [
-        "Element",
-        "value",
-        "option",
-        "ElementType"
-      ],
-      "line": 10
+      "line": 9,
+      "value": "#And I fill the \"Find parent\" details to create a new Parent"
     },
     {
-      "cells": [
-        "//*[contains(concat( \" \", @class, \" \" ), concat( \" \", \"form-control\", \" \" ))]",
-        "Henrry",
-        "xpath",
-        "Textbox"
-      ],
-      "line": 11
+      "line": 10,
+      "value": "#| Element                                                                       | value  | option | ElementType |"
+    },
+    {
+      "line": 11,
+      "value": "#| //*[contains(concat( \" \", @class, \" \" ), concat( \" \", \"form-control\", \" \" ))] | Henrry | xpath  | Textbox     |"
+    },
+    {
+      "line": 12,
+      "value": "#Then I should see the newly enabled \"No parent record found?\" label on left hand side"
+    },
+    {
+      "line": 13,
+      "value": "#And I click on the \"Add new Parent\" button to add a new parent"
+    },
+    {
+      "line": 14,
+      "value": "#| Element | option      |"
+    },
+    {
+      "line": 15,
+      "value": "#| .action | cssselector |"
+    },
+    {
+      "line": 16,
+      "value": "#Then \"Register new parent\" Tab should enable after click the Add new parent button"
+    },
+    {
+      "line": 17,
+      "value": "#And I Fill the \"Register new parent\" details to create a new parent"
+    },
+    {
+      "line": 18,
+      "value": "#| Element    | value                           | option | ElementType |"
+    },
+    {
+      "line": 19,
+      "value": "#| firstName  | Herrytt                         | name   | Textbox     |"
+    },
+    {
+      "line": 20,
+      "value": "#| lastName   | ollcottt                        | name   | Textbox     |"
+    },
+    {
+      "line": 21,
+      "value": "#| phoneEmail | e25mediatest+5@eight25media.com | name   | Textbox     |"
+    },
+    {
+      "line": 22,
+      "value": "#And I click on the \"Save\" button to create a new parent"
+    },
+    {
+      "line": 23,
+      "value": "#| Element                                      | option |"
+    },
+    {
+      "line": 24,
+      "value": "#| //button[@class\u003d\u0027btn loyal-btn-save-update\u0027] | xpath  |"
+    },
+    {
+      "line": 25,
+      "value": "#And I should see the \"Parent successfully saved and invited\" confirm the parent created sucessfully"
+    },
+    {
+      "line": 26,
+      "value": "#| Element                                                       | option | Validation message                    |"
+    },
+    {
+      "line": 27,
+      "value": "#| //p[contains(text(),\u0027Parent successfully saved and invited\u0027)] | xpath  | Parent successfully saved and invited |"
     }
   ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 12,
-  "name": "I should see the newly enabled \"No parent record found?\" label on left hand side",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 13,
-  "name": "I click on the \"Add new Parent\" button to add a new parent",
+  "line": 28,
+  "name": "I should see the excel data \"4691690400007294\"",
   "rows": [
     {
       "cells": [
-        "Element",
-        "option"
+        "4691690400007294"
       ],
-      "line": 14
-    },
-    {
-      "cells": [
-        ".action",
-        "cssselector"
-      ],
-      "line": 15
-    }
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 16,
-  "name": "\"Register new parent\" Tab should enable after click the Add new parent button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 17,
-  "name": "I Fill the \"Register new parent\" details to create a new parent",
-  "rows": [
-    {
-      "cells": [
-        "Element",
-        "value",
-        "option",
-        "ElementType"
-      ],
-      "line": 18
-    },
-    {
-      "cells": [
-        "firstName",
-        "Herrytt",
-        "name",
-        "Textbox"
-      ],
-      "line": 19
-    },
-    {
-      "cells": [
-        "lastName",
-        "ollcottt",
-        "name",
-        "Textbox"
-      ],
-      "line": 20
-    },
-    {
-      "cells": [
-        "phoneEmail",
-        "e25mediatest+5@eight25media.com",
-        "name",
-        "Textbox"
-      ],
-      "line": 21
-    }
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 22,
-  "name": "I click on the \"Save\" button to create a new parent",
-  "rows": [
-    {
-      "cells": [
-        "Element",
-        "option"
-      ],
-      "line": 23
-    },
-    {
-      "cells": [
-        "//button[@class\u003d\u0027btn loyal-btn-save-update\u0027]",
-        "xpath"
-      ],
-      "line": 24
-    }
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 25,
-  "name": "I should see the \"Parent successfully saved and invited\" confirm the parent created sucessfully",
-  "rows": [
-    {
-      "cells": [
-        "Element",
-        "option",
-        "Validation message"
-      ],
-      "line": 26
-    },
-    {
-      "cells": [
-        "//p[contains(text(),\u0027Parent successfully saved and invited\u0027)]",
-        "xpath",
-        "Parent successfully saved and invited"
-      ],
-      "line": 27
+      "line": 29
     }
   ],
   "keyword": "And "
@@ -309,7 +257,7 @@ formatter.match({
   "location": "RegisterClient.i_Should_see_the_Loyal_login_page_loaded_sucessfullyy()"
 });
 formatter.result({
-  "duration": 1020728562,
+  "duration": 1029532400,
   "status": "passed"
 });
 formatter.match({
@@ -322,109 +270,31 @@ formatter.match({
   "location": "RegisterClient.i_should_click_on_button_on_left_side_menu(String,DataTable)"
 });
 formatter.result({
-  "duration": 6238940359,
+  "duration": 6675876600,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterClient.i_should_redirect_to_the_Register_Client_page_successfullyy()"
 });
 formatter.result({
-  "duration": 2043069287,
+  "duration": 2131019100,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Find parent",
-      "offset": 12
+      "val": "4691690400007294",
+      "offset": 29
     }
   ],
-  "location": "RegisterClient.i_fill_the_details_to_create_a_new_Parent(String,DataTable)"
+  "location": "RegisterClient.i_should_see_the_excel_data(String,DataTable)"
 });
 formatter.result({
-  "duration": 530319731,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "No parent record found?",
-      "offset": 32
-    }
-  ],
-  "location": "RegisterClient.i_should_see_the_newly_enabled_label_on_left_hand_side(String)"
-});
-formatter.result({
-  "duration": 98733,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Add new Parent",
-      "offset": 16
-    }
-  ],
-  "location": "RegisterClient.i_click_on_the_button_to_add_a_new_parent(String,DataTable)"
-});
-formatter.result({
-  "duration": 6303359166,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Register new parent",
-      "offset": 1
-    }
-  ],
-  "location": "RegisterClient.tab_should_enable_after_click_the_Add_new_parent_button(String)"
-});
-formatter.result({
-  "duration": 2154252802,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Register new parent",
-      "offset": 12
-    }
-  ],
-  "location": "RegisterClient.i_Fill_the_details_to_create_a_new_parent(String,DataTable)"
-});
-formatter.result({
-  "duration": 1180768506,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Save",
-      "offset": 16
-    }
-  ],
-  "location": "RegisterClient.i_click_on_the_button_to_create_a_new_parent(String,DataTable)"
-});
-formatter.result({
-  "duration": 6233727277,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Parent successfully saved and invited",
-      "offset": 18
-    }
-  ],
-  "location": "RegisterClient.i_should_see_the_confirm_the_parent_created_sucessfully(String,DataTable)"
-});
-formatter.result({
-  "duration": 3152527097,
+  "duration": 914934600,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15309198,
+  "duration": 10484800,
   "status": "passed"
 });
 });
