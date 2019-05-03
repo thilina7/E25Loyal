@@ -265,6 +265,7 @@ public class RegisterClient {
 		List<List<String>> rawData = new ArrayList<List<String>>();
 		System.out.println("Query2.size()---"+Query2.size());
 		for(int i=0;i<Query2.size();i++){
+			System.out.println("Query2.get(i).get(0)--->"+Query2.get(i).get(0));
 			String SearchValue= setElements.GetExcelValue(Query2.get(i).get(0));
 			System.out.println("Query coloumn after Edit:  "+SearchValue);
 			
@@ -277,13 +278,49 @@ public class RegisterClient {
 		}
 		 DataTable modifications = DataTable.create(rawData);
 			System.out.println("rawData-------------->"+modifications);		
-
-		
+			
+			commonSteps.ExceldataCriteriaOf(sheet, "", modifications);
 		
 		
 	}
 
 
+	@Then("^I should click the \"([^\"]*)\" button on the left menu bar$")
+	public void i_should_click_the_button_on_the_left_menu_bar(String arg1, DataTable table) throws Throwable {
+	   
+		try {
+			System.out.println("------------Click on the pet tracking board on the left menu bar");
+			log.debug("------------Click on the pet tracking board on the left menu bar");
+			Thread.sleep(5000);
+			commonSteps.clickOnButtonIn(arg1, "", table);
+			log.debug("------------pet tracking board on the left menu bar button clicked successfully");
+
+		} catch (Exception e) {
+			System.out.println("--------------------fail to click pet tracking board on the left menu bar button");
+			log.error(e.getMessage(), e);
+			throw (e);
+		}
+
+		
+	}
 	
+	@Given("^I click on the ok button of the \"([^\"]*)\" validation message$")
+	public void i_click_on_the_ok_button_of_the_validation_message(String arg1, DataTable table) throws Throwable {
+	    
+		try {
+			System.out.println("------------Click on the ok_button_of_the_validation_message");
+			log.debug("------------Click on the ok_button_of_the_validation_message");
+			Thread.sleep(5000);
+			commonSteps.clickOnButtonIn(arg1, "", table);
+			log.debug("------------Clicked on the ok_button_of_the_validation_message");
+
+		} catch (Exception e) {
+			System.out.println("--------------------fail to Click on the ok_button_of_the_validation_message");
+			log.error(e.getMessage(), e);
+			throw (e);
+		}
+
+		
+	}
 
 }

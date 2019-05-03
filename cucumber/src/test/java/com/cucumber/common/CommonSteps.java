@@ -594,11 +594,97 @@ public class CommonSteps {
 			}
 		}
 		
+		//normal data criteria fill
+		
 		public void dataCriteriaOf(String arg1, String arg2, DataTable table) throws Exception{
 			try {
 				List<List<String>> data = table.raw();
 				log.debug("Verify fill search criteria of " + arg2);
 				for (int i = 1; i < data.size(); i++) {
+					String elementType = data.get(i).get(3).toLowerCase();
+					String option = data.get(i).get(2).toLowerCase();
+					switch (elementType) {
+					case "dropdown":
+						String[] optionValues = option.split(",");
+						String optionValueOne = optionValues[0].toLowerCase();
+						String optionValueTwo = optionValues[1].toLowerCase();
+						switch (optionValueOne) {
+						case "name":
+							if (optionValueTwo.equals("index")) {
+								setElement.SelectNamedDropDownByIndex(data.get(i).get(0),
+										Integer.parseInt(data.get(i).get(1)));
+							}
+							if (optionValueTwo.equals("value")) {
+								setElement.SelectNamedDropDownByValue(data.get(i).get(0), (data.get(i).get(1)));
+							}
+							break;
+						case "id":
+							if (optionValueTwo.equals("index")) {
+								setElement.SelectDropDownByIndex(data.get(i).get(0), Integer.parseInt(data.get(i).get(1)));
+							}
+							if (optionValueTwo.equals("value")) {
+								setElement.SelectIDDropDownByValue(data.get(i).get(0), (data.get(i).get(1)));
+							}
+							break;
+						case "xpath":
+							if (optionValueTwo.equals("index")) {
+								setElement.SelectXpathDropDownByIndex(data.get(i).get(0),
+										Integer.parseInt(data.get(i).get(1)));
+							}
+							if (optionValueTwo.equals("value")) {
+								setElement.SelectXpathDropDownByValue(data.get(i).get(0), (data.get(i).get(1)));
+							}
+							break;
+						}
+						break;
+					case "click":
+						switch (option) {
+						case "id":
+							setElement.clickElementById(data.get(i).get(0));
+							Thread.sleep(1000);
+							break;
+						case "name":
+							setElement.clickElementByName(data.get(i).get(0));
+							Thread.sleep(1000);
+							break;
+						case "xpath":
+							setElement.clickElementByXpath(data.get(i).get(0));
+							Thread.sleep(1000);
+							break;
+						}
+						break;
+					case "textbox":
+						switch (option) {
+						case "id":
+							setElement.setElement("TEXT", data.get(i).get(1), data.get(i).get(0));
+							break;
+						case "name":
+							setElement.setElementByName("TEXT", data.get(i).get(1), data.get(i).get(0));
+							break;
+						case "xpath":
+							setElement.setElementByXpath("TEXT", data.get(i).get(1), data.get(i).get(0));
+							break;
+							
+						}
+						break;
+					}
+				}
+				getScreenShots(webDriver, iImageCounter++ + "_fill criteria of " + arg2,
+						configFileReader.getImageLocation(), setScreenShotPath(arg2)[0]);
+				log.debug("Successfully filled search criteria of " + arg2);
+			} catch (Exception e) {
+				log.error(e.getMessage(), e);
+				throw (e);
+			}
+		}
+		
+		//(GetData from excel) data criteria fill
+		
+		public void ExceldataCriteriaOf(String arg1, String arg2, DataTable table) throws Exception{
+			try {
+				List<List<String>> data = table.raw();
+				log.debug("Verify fill search criteria of " + arg2);
+				for (int i = 0; i < data.size(); i++) {
 					String elementType = data.get(i).get(3).toLowerCase();
 					String option = data.get(i).get(2).toLowerCase();
 					switch (elementType) {

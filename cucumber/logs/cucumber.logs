@@ -1,12 +1,44 @@
-03/05/2019 09:52:39 LOG -------------Going to Put a URL to the browser which is opened
-03/05/2019 09:52:44 LOG -------------URL Loaded successfully
-03/05/2019 09:52:44 LOG -------------Going to fill the username and passwords to the fields
-03/05/2019 09:52:44 LOG Verify fill search criteria of Loyal Login
-03/05/2019 09:52:45 LOG Successfully filled search criteria of Loyal Login
-03/05/2019 09:52:45 LOG -------------filled the username and passwords to the fields successfully
-03/05/2019 09:52:45 LOG -------------Click on the Login button to login to the system
-03/05/2019 09:52:46 LOG Verify click Login button in Loyal page
-03/05/2019 09:52:46 LOG Successfully clicked Login button in Loyal page
-03/05/2019 09:52:47 LOG -------------Logged into the system successfully
-03/05/2019 09:52:52 LOG Starting to send mail
-03/05/2019 09:53:03 LOG Finished send mail
+03/05/2019 15:28:04 LOG -------------Going to Put a URL to the browser which is opened
+03/05/2019 15:28:10 LOG -------------URL Loaded successfully
+03/05/2019 15:28:10 LOG -------------Going to fill the username and passwords to the fields
+03/05/2019 15:28:10 LOG Verify fill search criteria of Loyal Login
+03/05/2019 15:28:11 LOG Successfully filled search criteria of Loyal Login
+03/05/2019 15:28:11 LOG -------------filled the username and passwords to the fields successfully
+03/05/2019 15:28:11 LOG -------------Click on the Login button to login to the system
+03/05/2019 15:28:12 LOG Verify click Login button in Loyal page
+03/05/2019 15:28:13 LOG Successfully clicked Login button in Loyal page
+03/05/2019 15:28:14 LOG -------------Logged into the system successfully
+03/05/2019 15:28:14 LOG ------------Click on the Register client button on leftside menu bar
+03/05/2019 15:28:20 LOG Verify click Register client button in 
+03/05/2019 15:28:20 LOG Successfully clicked Register client button in 
+03/05/2019 15:28:20 LOG ------------Clicked on the Register client button on leftside menu bar successfully
+03/05/2019 15:28:22 LOG --------------------register client page loaded successfully
+03/05/2019 15:28:22 LOG -------------Going to fill the Parent name to the field to create a new parent
+03/05/2019 15:28:22 LOG Verify fill search criteria of 
+03/05/2019 15:28:23 LOG Successfully filled search criteria of 
+03/05/2019 15:28:23 LOG -------------Filled the Parent name to the field successfully
+03/05/2019 15:28:23 LOG ------------Click on the Register client button on leftside menu bar
+03/05/2019 15:28:29 LOG Verify click Add new Parent button in 
+03/05/2019 15:28:29 LOG Successfully clicked Add new Parent button in 
+03/05/2019 15:28:29 LOG ------------Clicked on the Register client button on leftside menu bar successfully
+03/05/2019 15:28:29 LOG -------------I should see the newly enabled Add new parent tab
+03/05/2019 15:28:31 LOG --------------------enabled Add new parent tab successfully
+03/05/2019 15:28:31 LOG Verify fill search criteria of 
+03/05/2019 15:28:33 LOG Successfully filled search criteria of 
+03/05/2019 15:28:33 LOG ------------Click on the save parent button
+03/05/2019 15:28:39 LOG Verify click Save button in 
+03/05/2019 15:28:39 LOG Successfully clicked Save button in 
+03/05/2019 15:28:39 LOG ------------Save parent button clicked successfully
+03/05/2019 15:28:39 LOG -------------I should see the popup message Parent successfully saved and invited
+03/05/2019 15:28:42 LOG --------------------popup message 'Parent successfully saved and invited' showing correctly and its pass
+03/05/2019 15:28:42 LOG ------------Click on the ok_button_of_the_validation_message
+03/05/2019 15:28:48 LOG Verify click Parent successfully saved and invited button in 
+03/05/2019 15:28:49 LOG Successfully clicked Parent successfully saved and invited button in 
+03/05/2019 15:28:49 LOG ------------Clicked on the ok_button_of_the_validation_message
+03/05/2019 15:28:49 LOG ------------Click on the pet tracking board on the left menu bar
+03/05/2019 15:28:55 LOG Verify click Pet tracking board button in 
+03/05/2019 15:28:55 LOG Successfully clicked Pet tracking board button in 
+03/05/2019 15:28:55 LOG ------------pet tracking board on the left menu bar button clicked successfully
+03/05/2019 15:28:56 LOG -------------Logged into the system successfully
+03/05/2019 15:29:10 LOG Starting to send mail
+03/05/2019 15:29:22 LOG Finished send mail

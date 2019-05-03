@@ -34,6 +34,8 @@ public class Dashboard {
 	@Given("^I should see the pet appoinment \"([^\"]*)\" in the bashboard$")
 	public void i_should_see_the_pet_appoinment_in_the_bashboard(String arg1, DataTable arg2) throws Throwable {
 		
+		try {
+			
 		Actions action = new Actions(webDriver);
 		Thread.sleep(5000);
 		WebElement sourceLocator = webDriver.findElement(By.cssSelector("#root > div.theme-light > div > main > div.container__wrap > div > div > div.card > div > div.board.minimize > div > div > div > span:nth-child(1) > section > div > div > div > article > div > div.name"));
@@ -43,9 +45,13 @@ public class Dashboard {
 		// dragAndDrop(source, target) method accepts two parameters source and locator.
 		// used dragAndDrop method to drag and drop the source locator to target locator
 		action.dragAndDrop(sourceLocator, targetLocator).build().perform();
+		}
+	 catch (Exception e) {
+		System.out.println("--------------------fail to Click on the ok_button_of_the_validation_message");
+		log.error(e.getMessage(), e);
+		throw (e);
+	}
 
-		
-		
 	}
 
 }
