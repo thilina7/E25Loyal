@@ -1,17 +1,12 @@
-30/04/2019 16:40:03 LOG -------------Going to Put a URL to the browser which is opened
-30/04/2019 16:40:18 LOG -------------URL Loaded successfully
-30/04/2019 16:40:18 LOG -------------Going to fill the username and passwords to the fields
-30/04/2019 16:40:18 LOG Verify fill search criteria of Loyal Login
-30/04/2019 16:40:23 LOG Successfully filled search criteria of Loyal Login
-30/04/2019 16:40:23 LOG -------------filled the username and passwords to the fields successfully
-30/04/2019 16:40:23 LOG -------------Click on the Login button to login to the system
-30/04/2019 16:40:24 LOG Verify click Login button in Loyal page
-30/04/2019 16:40:24 LOG Successfully clicked Login button in Loyal page
-30/04/2019 16:40:25 LOG -------------Logged into the system successfully
-30/04/2019 16:40:25 LOG ------------Click on the Register client button on leftside menu bar
-30/04/2019 16:40:31 LOG Verify click Register client button in 
-30/04/2019 16:40:32 LOG Successfully clicked Register client button in 
-30/04/2019 16:40:32 LOG ------------Clicked on the Register client button on leftside menu bar successfully
-30/04/2019 16:40:34 LOG --------------------register client page loaded successfully
-30/04/2019 16:40:54 LOG Starting to send mail
-30/04/2019 16:41:08 LOG Finished send mail
+03/05/2019 09:52:39 LOG -------------Going to Put a URL to the browser which is opened
+03/05/2019 09:52:44 LOG -------------URL Loaded successfully
+03/05/2019 09:52:44 LOG -------------Going to fill the username and passwords to the fields
+03/05/2019 09:52:44 LOG Verify fill search criteria of Loyal Login
+03/05/2019 09:52:45 LOG Successfully filled search criteria of Loyal Login
+03/05/2019 09:52:45 LOG -------------filled the username and passwords to the fields successfully
+03/05/2019 09:52:45 LOG -------------Click on the Login button to login to the system
+03/05/2019 09:52:46 LOG Verify click Login button in Loyal page
+03/05/2019 09:52:46 LOG Successfully clicked Login button in Loyal page
+03/05/2019 09:52:47 LOG -------------Logged into the system successfully
+03/05/2019 09:52:52 LOG Starting to send mail
+03/05/2019 09:53:03 LOG Finished send mail

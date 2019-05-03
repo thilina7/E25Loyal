@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 36851177300,
+  "duration": 5938954500,
   "status": "passed"
 });
 formatter.scenario({
@@ -87,7 +87,7 @@ formatter.match({
   "location": "Loyal_Login.i_should_load_the_URL_of_URL_to_the_Browser(String,String,DataTable)"
 });
 formatter.result({
-  "duration": 22836032000,
+  "duration": 6405247600,
   "status": "passed"
 });
 formatter.match({
@@ -104,11 +104,11 @@ formatter.match({
   "location": "Loyal_Login.i_should_click_the_button_to_login_to_the(String,String,DataTable)"
 });
 formatter.result({
-  "duration": 1460269700,
+  "duration": 1223987900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 9970500,
+  "duration": 9389100,
   "status": "passed"
 });
 formatter.uri("B_RegisterClient.feature");
@@ -120,7 +120,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 68500,
+  "duration": 98800,
   "status": "passed"
 });
 formatter.scenario({
@@ -137,33 +137,23 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "line": 5,
-  "name": "I should click on \"Register client\" button on left side menu",
-  "rows": [
+  "comments": [
     {
-      "cells": [
-        "Element",
-        "option"
-      ],
-      "line": 6
+      "line": 5,
+      "value": "#And I should click on \"Register client\" button on left side menu"
     },
     {
-      "cells": [
-        ".lnr-user",
-        "cssselector"
-      ],
-      "line": 7
-    }
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 8,
-  "name": "I should redirect to the Register Client page successfullyy",
-  "keyword": "Then "
-});
-formatter.step({
-  "comments": [
+      "line": 6,
+      "value": "#| Element   | option      |"
+    },
+    {
+      "line": 7,
+      "value": "#| .lnr-user | cssselector |"
+    },
+    {
+      "line": 8,
+      "value": "#Then I should redirect to the Register Client page successfullyy"
+    },
     {
       "line": 9,
       "value": "#And I fill the \"Find parent\" details to create a new Parent"
@@ -242,13 +232,34 @@ formatter.step({
     }
   ],
   "line": 28,
-  "name": "I should see the excel data \"4691690400007294\"",
+  "name": "I should see the excel data \"RegisterClient\"",
   "rows": [
     {
       "cells": [
-        "4691690400007294"
+        "firstName",
+        "Herrytt",
+        "name",
+        "Textbox"
       ],
       "line": 29
+    },
+    {
+      "cells": [
+        "lastName",
+        "Herrytt",
+        "name",
+        "Textbox"
+      ],
+      "line": 30
+    },
+    {
+      "cells": [
+        "phoneEmail",
+        "Herrytt",
+        "name",
+        "Textbox"
+      ],
+      "line": 31
     }
   ],
   "keyword": "And "
@@ -257,44 +268,24 @@ formatter.match({
   "location": "RegisterClient.i_Should_see_the_Loyal_login_page_loaded_sucessfullyy()"
 });
 formatter.result({
-  "duration": 1029532400,
+  "duration": 1039000200,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Register client",
-      "offset": 19
-    }
-  ],
-  "location": "RegisterClient.i_should_click_on_button_on_left_side_menu(String,DataTable)"
-});
-formatter.result({
-  "duration": 6675876600,
-  "status": "passed"
-});
-formatter.match({
-  "location": "RegisterClient.i_should_redirect_to_the_Register_Client_page_successfullyy()"
-});
-formatter.result({
-  "duration": 2131019100,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "4691690400007294",
+      "val": "RegisterClient",
       "offset": 29
     }
   ],
   "location": "RegisterClient.i_should_see_the_excel_data(String,DataTable)"
 });
 formatter.result({
-  "duration": 914934600,
+  "duration": 554212200,
   "status": "passed"
 });
 formatter.after({
-  "duration": 10484800,
+  "duration": 13675100,
   "status": "passed"
 });
 });

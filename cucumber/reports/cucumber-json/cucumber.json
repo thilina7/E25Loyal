@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 36851177300,
+              "duration": 5938954500,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 9970500,
+              "duration": 9389100,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 22836032000,
+              "duration": 6405247600,
               "status": "passed"
             },
             "line": 4,
@@ -85,7 +85,7 @@
           },
           {
             "result": {
-              "duration": 1460269700,
+              "duration": 1223987900,
               "status": "passed"
             },
             "line": 8,
@@ -137,7 +137,7 @@
         "before": [
           {
             "result": {
-              "duration": 68500,
+              "duration": 98800,
               "status": "passed"
             },
             "match": {
@@ -152,7 +152,7 @@
         "after": [
           {
             "result": {
-              "duration": 10484800,
+              "duration": 13675100,
               "status": "passed"
             },
             "match": {
@@ -165,7 +165,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1029532400,
+              "duration": 1039000200,
               "status": "passed"
             },
             "line": 4,
@@ -177,56 +177,26 @@
           },
           {
             "result": {
-              "duration": 6675876600,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "I should click on \"Register client\" button on left side menu",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Register client",
-                  "offset": 19
-                }
-              ],
-              "location": "RegisterClient.i_should_click_on_button_on_left_side_menu(String,DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "Element",
-                  "option"
-                ],
-                "line": 6
-              },
-              {
-                "cells": [
-                  ".lnr-user",
-                  "cssselector"
-                ],
-                "line": 7
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2131019100,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "I should redirect to the Register Client page successfullyy",
-            "match": {
-              "location": "RegisterClient.i_should_redirect_to_the_Register_Client_page_successfullyy()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 914934600,
+              "duration": 554212200,
               "status": "passed"
             },
             "comments": [
+              {
+                "line": 5,
+                "value": "#And I should click on \"Register client\" button on left side menu"
+              },
+              {
+                "line": 6,
+                "value": "#| Element   | option      |"
+              },
+              {
+                "line": 7,
+                "value": "#| .lnr-user | cssselector |"
+              },
+              {
+                "line": 8,
+                "value": "#Then I should redirect to the Register Client page successfullyy"
+              },
               {
                 "line": 9,
                 "value": "#And I fill the \"Find parent\" details to create a new Parent"
@@ -305,11 +275,11 @@
               }
             ],
             "line": 28,
-            "name": "I should see the excel data \"4691690400007294\"",
+            "name": "I should see the excel data \"RegisterClient\"",
             "match": {
               "arguments": [
                 {
-                  "val": "4691690400007294",
+                  "val": "RegisterClient",
                   "offset": 29
                 }
               ],
@@ -318,9 +288,30 @@
             "rows": [
               {
                 "cells": [
-                  "4691690400007294"
+                  "firstName",
+                  "Herrytt",
+                  "name",
+                  "Textbox"
                 ],
                 "line": 29
+              },
+              {
+                "cells": [
+                  "lastName",
+                  "Herrytt",
+                  "name",
+                  "Textbox"
+                ],
+                "line": 30
+              },
+              {
+                "cells": [
+                  "phoneEmail",
+                  "Herrytt",
+                  "name",
+                  "Textbox"
+                ],
+                "line": 31
               }
             ],
             "keyword": "And "

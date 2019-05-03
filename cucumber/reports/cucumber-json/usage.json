@@ -5,12 +5,12 @@
       {
         "name": "I Should see the Loyal login page loaded sucessfullyy",
         "aggregatedDurations": {
-          "average": 1.0295324,
-          "median": 1.0295324
+          "average": 1.0390002,
+          "median": 1.0390002
         },
         "durations": [
           {
-            "duration": 1.0295324,
+            "duration": 1.0390002,
             "location": "B_RegisterClient.feature:4"
           }
         ]
@@ -23,49 +23,13 @@
       {
         "name": "I should click the \"Login\" button to login to the \"Loyal page\"",
         "aggregatedDurations": {
-          "average": 1.4602697,
-          "median": 1.4602697
+          "average": 1.2239879,
+          "median": 1.2239879
         },
         "durations": [
           {
-            "duration": 1.4602697,
+            "duration": 1.2239879,
             "location": "A_LoginToLoyal.feature:8"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^I should click on \"([^\"]*)\" button on left side menu$",
-    "steps": [
-      {
-        "name": "I should click on \"Register client\" button on left side menu",
-        "aggregatedDurations": {
-          "average": 6.6758766,
-          "median": 6.6758766
-        },
-        "durations": [
-          {
-            "duration": 6.6758766,
-            "location": "B_RegisterClient.feature:5"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^I should redirect to the Register Client page successfullyy$",
-    "steps": [
-      {
-        "name": "I should redirect to the Register Client page successfullyy",
-        "aggregatedDurations": {
-          "average": 2.1310191,
-          "median": 2.1310191
-        },
-        "durations": [
-          {
-            "duration": 2.1310191,
-            "location": "B_RegisterClient.feature:8"
           }
         ]
       }
@@ -77,12 +41,12 @@
       {
         "name": "I should load \"\" the URL of \"Loyal Login\" URL to the Browser",
         "aggregatedDurations": {
-          "average": 22.836032,
-          "median": 22.836032
+          "average": 6.4052476,
+          "median": 6.4052476
         },
         "durations": [
           {
-            "duration": 22.836032,
+            "duration": 6.4052476,
             "location": "A_LoginToLoyal.feature:4"
           }
         ]
@@ -93,14 +57,14 @@
     "source": "^I should see the excel data \"([^\"]*)\"$",
     "steps": [
       {
-        "name": "I should see the excel data \"4691690400007294\"",
+        "name": "I should see the excel data \"RegisterClient\"",
         "aggregatedDurations": {
-          "average": 0.9149346,
-          "median": 0.9149346
+          "average": 0.5542122,
+          "median": 0.5542122
         },
         "durations": [
           {
-            "duration": 0.9149346,
+            "duration": 0.5542122,
             "location": "B_RegisterClient.feature:28"
           }
         ]

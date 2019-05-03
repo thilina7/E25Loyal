@@ -1239,8 +1239,8 @@ public class SetElements {
 	
 	//Get Excel values from the Excel
 	
-	public static String GetExcelValue(String searchValue1){
-		String sheet = "CardStatusReport";
+	public String GetExcelValue(String searchValue1){
+		String sheet = "RegisterClient";
 		 FileInputStream fs=null;
 	    	Workbook wb=null;
 		 try{
