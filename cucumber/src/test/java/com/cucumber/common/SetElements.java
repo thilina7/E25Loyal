@@ -6,6 +6,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -22,8 +24,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-
 
 import cucumber.api.DataTable;
 import jxl.Sheet;
@@ -69,11 +69,10 @@ public class SetElements {
 
 		{
 			waitElementVisibleById(sId, configFileReader.getTimeOutPeriod());
-			if ( !driver.findElement(By.id(sId)).isSelected() )
-			{
-			     driver.findElement(By.id(sId)).click();
+			if (!driver.findElement(By.id(sId)).isSelected()) {
+				driver.findElement(By.id(sId)).click();
 			}
-			
+
 		}
 	}
 
@@ -90,7 +89,7 @@ public class SetElements {
 		} else if (sType.equalsIgnoreCase("RADIOBOX")) {
 			List<WebElement> rdBtn = driver.findElements(By.name(sName));
 			int iSize = rdBtn.size();
-			
+
 			// Start the loop from first Check Box to last Check Boxe
 			for (int i = 0; i < iSize; i++) {
 				// Store the Check Box name to the string variable,
@@ -105,9 +104,8 @@ public class SetElements {
 			}
 		} else if (sType.equalsIgnoreCase("CHECKBOX")) {
 			waitElementVisibleByName(sName, configFileReader.getTimeOutPeriod());
-			if ( !driver.findElement(By.name(sName)).isSelected() )
-			{
-			     driver.findElement(By.name(sName)).click();
+			if (!driver.findElement(By.name(sName)).isSelected()) {
+				driver.findElement(By.name(sName)).click();
 			}
 		}
 
@@ -119,13 +117,11 @@ public class SetElements {
 			waitElementVisibleByXpath(sXpath);
 			driver.findElement(By.xpath(sXpath)).clear();
 			driver.findElement(By.xpath(sXpath)).sendKeys(sText);
-		}
-		else if (sType.equalsIgnoreCase("DROPDOWN")) {
+		} else if (sType.equalsIgnoreCase("DROPDOWN")) {
 			waitElementVisibleByXpath(sXpath);
 			Select DropDown = new Select(driver.findElement(By.xpath(sXpath))); // 2
 			DropDown.selectByValue(sText);
-		}
-		else if (sType.equalsIgnoreCase("RADIOBOX")) {
+		} else if (sType.equalsIgnoreCase("RADIOBOX")) {
 			List<WebElement> rdBtn = driver.findElements(By.xpath(sXpath));
 			int iSize = rdBtn.size();
 			// Start the loop from first Check Box to last Check Boxe
@@ -145,9 +141,8 @@ public class SetElements {
 		{
 
 			waitElementVisibleByXpath(sXpath);
-			if ( !driver.findElement(By.xpath(sXpath)).isSelected() )
-			{
-			     driver.findElement(By.xpath(sXpath)).click();
+			if (!driver.findElement(By.xpath(sXpath)).isSelected()) {
+				driver.findElement(By.xpath(sXpath)).click();
 			}
 		}
 	}
@@ -185,9 +180,8 @@ public class SetElements {
 	}
 
 	/*
-	 * This method checks for a blank string and returns true if everything is
-	 * spac This method is only called from the isEmpty method and is a private
-	 * method.
+	 * This method checks for a blank string and returns true if everything is spac
+	 * This method is only called from the isEmpty method and is a private method.
 	 */
 
 	private boolean isblank(String s) {
@@ -248,19 +242,19 @@ public class SetElements {
 		WebDriverWait wait = new WebDriverWait(driver, configFileReader.getTimeOutPeriod());
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xPath)));
 	}
-	
+
 	public void waitElementClickableByClassName(String className) {
 		WebDriverWait wait = new WebDriverWait(driver, configFileReader.getTimeOutPeriod());
 		wait.until(ExpectedConditions.elementToBeClickable(By.className(className)));
 	}
-	
-	//CssSelector
+
+	// CssSelector
 
 	public void waitElementClickableByCssSelector(String CssSelector) {
 		WebDriverWait wait = new WebDriverWait(driver, configFileReader.getTimeOutPeriod());
 		wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(CssSelector)));
 	}
-	
+
 	public void waitElementClickableByName(String sName, long TimeOutSeconds) {
 		WebDriverWait wait = new WebDriverWait(driver, TimeOutSeconds);
 		wait.until(ExpectedConditions.elementToBeClickable(By.name(sName)));
@@ -290,18 +284,17 @@ public class SetElements {
 		waitElementClickableByXpath(xPath);
 		driver.findElement(By.xpath(xPath)).click();
 	}
-	
-	
+
 	public void clickElementByClassName(String ClassName) throws Exception {
 		waitElementClickableByClassName(ClassName);
 		driver.findElement(By.className(ClassName)).click();
 	}
-	
+
 	public void clickElementByCssSelector(String CssSelector) throws Exception {
 		waitElementClickableByCssSelector(CssSelector);
 		driver.findElement(By.cssSelector(CssSelector)).click();
 	}
-	
+
 	public void clickElementTageName(String sTagName) {
 		waitElementVisibleByTagName(sTagName, configFileReader.getTimeOutPeriod());
 		driver.findElement(By.tagName(sTagName)).click();
@@ -528,8 +521,7 @@ public class SetElements {
 	}
 
 	/**
-	 * Click item from an drop down from index by selecting select element by
-	 * name
+	 * Click item from an drop down from index by selecting select element by name
 	 * 
 	 */
 	public void SelectNamedDropDownByIndex(String sName, int iIndex) {
@@ -540,8 +532,7 @@ public class SetElements {
 	}
 
 	/**
-	 * Click item from an drop down from index by selecting select element by
-	 * name
+	 * Click item from an drop down from index by selecting select element by name
 	 * 
 	 */
 	public void SelectXpathDropDownByIndex(String sXpath, int iIndex) {
@@ -744,8 +735,7 @@ public class SetElements {
 	}
 
 	/**
-	 * Click on selected column cell if a specific text is present in a table
-	 * cell .
+	 * Click on selected column cell if a specific text is present in a table cell .
 	 * 
 	 * @throws Exception
 	 *
@@ -931,8 +921,8 @@ public class SetElements {
 		Assert.assertTrue(accManaPagePresent);
 
 		/*
-		 * try { Assert.assertTrue(accManaPagePresent); } catch (AssertionError
-		 * e1) { log.error(e1.getMessage(), e1); Assert.fail(); }
+		 * try { Assert.assertTrue(accManaPagePresent); } catch (AssertionError e1) {
+		 * log.error(e1.getMessage(), e1); Assert.fail(); }
 		 */
 	}
 
@@ -1204,79 +1194,111 @@ public class SetElements {
 		driver.switchTo().window(winHandleBefore);
 		driver.switchTo().frame("topFrame");
 	}
-	
-	//Validation message method
 
-	public void ValidationMessage(DataTable Table) throws Exception{
-		
+	// Validation message method
+
+	public void ValidationMessage(DataTable Table) throws Exception {
+
 		List<List<String>> Tableraw = Table.raw();
-		
-		
+
 		try {
-			System.out.println("------------I should see the popup message '"+Tableraw.get(1).get(2)+"'");
-			log.debug("-------------I should see the popup message "+Tableraw.get(1).get(2));
+			System.out.println("------------I should see the popup message '" + Tableraw.get(1).get(2) + "'");
+			log.debug("-------------I should see the popup message " + Tableraw.get(1).get(2));
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			Thread.sleep(3000);
-			if(driver.findElement(By.xpath(Tableraw.get(1).get(0))).getText().equalsIgnoreCase(Tableraw.get(1).get(2))){
-				System.out.println("--------------------popup message '"+Tableraw.get(1).get(2)+"' showing correctly and its pass");
-				log.debug("--------------------popup message '"+Tableraw.get(1).get(2)+"' showing correctly and its pass");
-				
+			if (driver.findElement(By.xpath(Tableraw.get(1).get(0))).getText()
+					.equalsIgnoreCase(Tableraw.get(1).get(2))) {
+				System.out.println("--------------------popup message '" + Tableraw.get(1).get(2)
+						+ "' showing correctly and its pass");
+				log.debug("--------------------popup message '" + Tableraw.get(1).get(2)
+						+ "' showing correctly and its pass");
+
+			} else {
+
+				log.debug("--------------------Fail '" + Tableraw.get(1).get(2) + "'");
+				assertTrue("--------------------Fail '" + Tableraw.get(1).get(2) + "'", false);
+
 			}
-			else {
-				
-				log.debug("--------------------Fail '"+Tableraw.get(1).get(2)+"'");
-				assertTrue("--------------------Fail '"+Tableraw.get(1).get(2)+"'", false);
-				
-				
-				
+		} catch (Exception e) {
+			System.out.println("--------------------Fail '" + Tableraw.get(1).get(2) + "'");
+			log.error(e.getMessage(), e);
+			throw (e);
+		}
+	}
+
+	// Get Excel values from the Excel
+
+	public String GetExcelValue(String searchValue1, String sheet){
+		//String sheet = "RegisterClient";
+		FileInputStream fs = null;
+		Workbook wb = null;
+		try {
+
+			String FilePath = Constants.REPORT_DATA_FILE_PATH;
+			fs = new FileInputStream(FilePath);
+			wb = Workbook.getWorkbook(fs);
+			Sheet sh = wb.getSheet(sheet);
+			int cols = sh.getColumns();
+			int rows = sh.getRows();
+
+			// TO get the access to the sheet
+			for (int column = 0; column < cols; column++) {
+
+				for (int row = 0; row < rows; row++) {
+
+					String cellValue = sh.getCell(column, row).getContents();
+
+					if (cellValue.equals(searchValue1)) {
+
+						// searchValue1 = sh.getCell((column+1), row).getContents();
+						searchValue1 = sh.getCell((column + 1), row).getContents();
+						System.out.println("searchValue1--------->" + searchValue1);
+						return searchValue1;
+
+					}
+
+				}
 			}
-		  } catch (Exception e) {
-		  System.out.println("--------------------Fail '"+Tableraw.get(1).get(2)+"'");
-		  log.error(e.getMessage(), e); 
-		  throw (e); 
-		  }
+
+		} catch (Exception e) {
+
+			System.out.println(e);
+		}
+		return searchValue1;
+	}
+
+	//GetExcelValues from the excel sheet and arrange those data to the DataTable
+	
+	public DataTable GetExcelValueDataTable(String sheet,DataTable table ) {
+		
+		List<List<String>> Query2 =  table.raw();
+		
+		System.out.println("**Query2** "+Query2);
+		List<List<String>> rawData = new ArrayList<List<String>>();
+		
+		for(int i=0;i<Query2.size();i++){
+			System.out.println("column values--->"+Query2.get(i).get(1));
+			log.debug("column values--->"+Query2.get(i).get(1));
+			String SearchValue= GetExcelValue(Query2.get(i).get(1),sheet);
+			System.out.println("Query coloumn after Edit:  "+SearchValue);
+			
+				
+				List<String> middle = Arrays.asList( Query2.get(i).get(0),SearchValue, Query2.get(i).get(2), Query2.get(i).get(3));
+			
+				rawData.add(middle);
+		  
+		 
+		}
+		 DataTable modifications = DataTable.create(rawData);
+			System.out.println("rawData-------------->"+modifications);	
+			log.debug("rawData-------------->"+modifications);
+			
+			
+			
+		return modifications;
+		
+		
+		
 	}
 	
-	//Get Excel values from the Excel
-	
-	public String GetExcelValue(String searchValue1){
-		String sheet = "RegisterClient";
-		 FileInputStream fs=null;
-	    	Workbook wb=null;
-		 try{
-		 
-			 String FilePath = Constants.REPORT_DATA_FILE_PATH;
-			 fs = new FileInputStream(FilePath);
-			 wb = Workbook.getWorkbook(fs);
-				Sheet sh = wb.getSheet(sheet);
-				int cols = sh.getColumns();
-				int rows = sh.getRows();
-				
-				// TO get the access to the sheet
-				for(int column=0;column<cols;column++){
-					
-					for (int row=0;row<rows;row++){
-						
-						String cellValue = sh.getCell(column, row).getContents();
-						
-						if(cellValue.equals(searchValue1)){
-							
-							//searchValue1 = sh.getCell((column+1), row).getContents();
-							searchValue1 = sh.getCell((column+1), row).getContents();
-							System.out.println("searchValue1--------->"+searchValue1);
-							return searchValue1;
-						
-						}
-						
-					}
-				}
-				
-		 }
-		 catch(Exception e){
-			 
-			 System.out.println(e);
-		 }
-		return searchValue1;
-	 }
-
 }

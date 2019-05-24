@@ -678,7 +678,7 @@ public class CommonSteps {
 			}
 		}
 		
-		//(GetData from excel) data criteria fill
+		//(GetData from excel) data criteria fill (remove the datatable Column names)
 		
 		public void ExceldataCriteriaOf(String arg1, String arg2, DataTable table) throws Exception{
 			try {
@@ -691,7 +691,9 @@ public class CommonSteps {
 					case "dropdown":
 						String[] optionValues = option.split(",");
 						String optionValueOne = optionValues[0].toLowerCase();
+						System.out.println("optionValueOne--->"+optionValueOne);
 						String optionValueTwo = optionValues[1].toLowerCase();
+						System.out.println("optionValueTwo--->"+optionValueTwo);
 						switch (optionValueOne) {
 						case "name":
 							if (optionValueTwo.equals("index")) {
@@ -761,6 +763,95 @@ public class CommonSteps {
 				throw (e);
 			}
 		}
+		
+		//several iteration happening for Scenario outline
+		
+				public void dataCriteriaOfScenarioOut(String arg1, String arg2, DataTable table) throws Exception{
+					try {
+						List<List<String>> data = table.raw();
+						log.debug("Verify fill search criteria of " + arg2);
+						for (int i = 1; i < data.size(); i++) {
+							String elementType = data.get(i).get(2).toLowerCase();
+							System.out.println("elementType----> "+elementType);
+							String option = data.get(i).get(1).toLowerCase();
+							System.out.println("option----> "+option);
+							switch (elementType) {
+							case "dropdown":
+								String[] optionValues = option.split(",");
+								String optionValueOne = optionValues[0].toLowerCase();
+								String optionValueTwo = optionValues[1].toLowerCase();
+								switch (optionValueOne) {
+								case "name":
+									if (optionValueTwo.equals("index")) {
+										setElement.SelectNamedDropDownByIndex(data.get(i).get(0),
+												Integer.parseInt(data.get(i).get(1)));
+									}
+									if (optionValueTwo.equals("value")) {
+										setElement.SelectNamedDropDownByValue(data.get(i).get(0), (data.get(i).get(1)));
+									}
+									break;
+								case "id":
+									if (optionValueTwo.equals("index")) {
+										setElement.SelectDropDownByIndex(data.get(i).get(0), Integer.parseInt(data.get(i).get(1)));
+									}
+									if (optionValueTwo.equals("value")) {
+										setElement.SelectIDDropDownByValue(data.get(i).get(0), (data.get(i).get(1)));
+									}
+									break;
+								case "xpath":
+									if (optionValueTwo.equals("index")) {
+										setElement.SelectXpathDropDownByIndex(data.get(i).get(0),
+												Integer.parseInt(data.get(i).get(1)));
+									}
+									if (optionValueTwo.equals("value")) {
+										setElement.SelectXpathDropDownByValue(data.get(i).get(0), (data.get(i).get(1)));
+									}
+									break;
+								}
+								break;
+							case "click":
+								switch (option) {
+								case "id":
+									setElement.clickElementById(data.get(i).get(0));
+									Thread.sleep(1000);
+									break;
+								case "name":
+									setElement.clickElementByName(data.get(i).get(0));
+									Thread.sleep(1000);
+									break;
+								case "xpath":
+									setElement.clickElementByXpath(data.get(i).get(0));
+									Thread.sleep(1000);
+									break;
+								}
+								break;
+							case "textbox":
+								switch (option) {
+								case "id":
+									System.out.println("arg1, data.get(i).get(0)"+arg1+ "    "  + data.get(i).get(0));
+									setElement.setElement("TEXT", arg1, data.get(i).get(0));
+									break;
+								case "name":
+									System.out.println("arg1, data.get(i).get(0)"+arg1+ "    "  + data.get(i).get(0));
+									setElement.setElementByName("TEXT", arg1, data.get(i).get(0));
+									break;
+								case "xpath":
+									System.out.println("arg1, data.get(i).get(0)"+arg1+ "    "  + data.get(i).get(0));
+									setElement.setElementByXpath("TEXT", arg1, data.get(i).get(0));
+									break;
+									
+								}
+								break;
+							}
+						}
+						getScreenShots(webDriver, iImageCounter++ + "_fill criteria of " + arg2,
+								configFileReader.getImageLocation(), setScreenShotPath(arg2)[0]);
+						log.debug("Successfully filled search criteria of " + arg2);
+					} catch (Exception e) {
+						log.error(e.getMessage(), e);
+						throw (e);
+					}
+				}
 		
 		public void navigateToPreviousPage() throws Exception{
 			try {

@@ -14,16 +14,22 @@ Feature: Regiter Client
       | Element | option      |
       | .action | cssselector |
     Then "Register new parent" Tab should enable after click the Add new parent button
-    #And I Fill the "Register new parent" details to create a new parent
-    #| Element    | value                           | option | ElementType |
-    #| firstName  | Herrytt                         | name   | Textbox     |
-    #| lastName   | ollcottt                        | name   | Textbox     |
-    #| phoneEmail | e25mediatest+5@eight25media.com | name   | Textbox     |
     And I should see the excel data "RegisterClient"
-      | Element    | value   | option | ElementType |
-      | firstName  | Herrytt | name   | Textbox     |
-      | lastName   | Herrytt | name   | Textbox     |
-      | phoneEmail | Herrytt | name   | Textbox     |
+      | Element    | value      | option | ElementType |
+      | firstName  | firstName  | name   | Textbox     |
+      | lastName   | lastName   | name   | Textbox     |
+      | phoneEmail | phoneEmail | name   | Textbox     |
+    And I click on the "Add New Pet" to create a pet to the parent
+      | Element                   | option      |
+      | .add-new-top-panel-button | cssselector |
+    And I should see the "Register New Pet" tab after clicking the button
+    And I fill the "Register New Pet" details from excel data "RegisterClient"
+      | Element                                                    | value    | option      | ElementType |
+      | name                                                       | Pet Name | name        | Textbox     |
+      | species                                                    | Species  | id,index    | dropdown    |
+      | //div[@class='Select-placeholder selectorgadget_selected'] | Breed    | xpath,value | dropdown    |
+      | gender                                                     | Gender   | id,value    | dropdown    |
+    #| //div[@class='Select-placeholder'] | Herrytt | xpath  | Textbox     |
     And I click on the "Save" button to create a new parent
       | Element                                      | option |
       | //button[@class='btn loyal-btn-save-update'] | xpath  |

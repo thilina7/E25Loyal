@@ -1,44 +1,245 @@
-03/05/2019 15:28:04 LOG -------------Going to Put a URL to the browser which is opened
-03/05/2019 15:28:10 LOG -------------URL Loaded successfully
-03/05/2019 15:28:10 LOG -------------Going to fill the username and passwords to the fields
-03/05/2019 15:28:10 LOG Verify fill search criteria of Loyal Login
-03/05/2019 15:28:11 LOG Successfully filled search criteria of Loyal Login
-03/05/2019 15:28:11 LOG -------------filled the username and passwords to the fields successfully
-03/05/2019 15:28:11 LOG -------------Click on the Login button to login to the system
-03/05/2019 15:28:12 LOG Verify click Login button in Loyal page
-03/05/2019 15:28:13 LOG Successfully clicked Login button in Loyal page
-03/05/2019 15:28:14 LOG -------------Logged into the system successfully
-03/05/2019 15:28:14 LOG ------------Click on the Register client button on leftside menu bar
-03/05/2019 15:28:20 LOG Verify click Register client button in 
-03/05/2019 15:28:20 LOG Successfully clicked Register client button in 
-03/05/2019 15:28:20 LOG ------------Clicked on the Register client button on leftside menu bar successfully
-03/05/2019 15:28:22 LOG --------------------register client page loaded successfully
-03/05/2019 15:28:22 LOG -------------Going to fill the Parent name to the field to create a new parent
-03/05/2019 15:28:22 LOG Verify fill search criteria of 
-03/05/2019 15:28:23 LOG Successfully filled search criteria of 
-03/05/2019 15:28:23 LOG -------------Filled the Parent name to the field successfully
-03/05/2019 15:28:23 LOG ------------Click on the Register client button on leftside menu bar
-03/05/2019 15:28:29 LOG Verify click Add new Parent button in 
-03/05/2019 15:28:29 LOG Successfully clicked Add new Parent button in 
-03/05/2019 15:28:29 LOG ------------Clicked on the Register client button on leftside menu bar successfully
-03/05/2019 15:28:29 LOG -------------I should see the newly enabled Add new parent tab
-03/05/2019 15:28:31 LOG --------------------enabled Add new parent tab successfully
-03/05/2019 15:28:31 LOG Verify fill search criteria of 
-03/05/2019 15:28:33 LOG Successfully filled search criteria of 
-03/05/2019 15:28:33 LOG ------------Click on the save parent button
-03/05/2019 15:28:39 LOG Verify click Save button in 
-03/05/2019 15:28:39 LOG Successfully clicked Save button in 
-03/05/2019 15:28:39 LOG ------------Save parent button clicked successfully
-03/05/2019 15:28:39 LOG -------------I should see the popup message Parent successfully saved and invited
-03/05/2019 15:28:42 LOG --------------------popup message 'Parent successfully saved and invited' showing correctly and its pass
-03/05/2019 15:28:42 LOG ------------Click on the ok_button_of_the_validation_message
-03/05/2019 15:28:48 LOG Verify click Parent successfully saved and invited button in 
-03/05/2019 15:28:49 LOG Successfully clicked Parent successfully saved and invited button in 
-03/05/2019 15:28:49 LOG ------------Clicked on the ok_button_of_the_validation_message
-03/05/2019 15:28:49 LOG ------------Click on the pet tracking board on the left menu bar
-03/05/2019 15:28:55 LOG Verify click Pet tracking board button in 
-03/05/2019 15:28:55 LOG Successfully clicked Pet tracking board button in 
-03/05/2019 15:28:55 LOG ------------pet tracking board on the left menu bar button clicked successfully
-03/05/2019 15:28:56 LOG -------------Logged into the system successfully
-03/05/2019 15:29:10 LOG Starting to send mail
-03/05/2019 15:29:22 LOG Finished send mail
+23/05/2019 17:34:07 LOG -------------Going to Put a URL to the browser which is opened
+23/05/2019 17:34:20 LOG -------------URL Loaded successfully
+23/05/2019 17:34:20 LOG -------------Going to fill the username and passwords to the fields
+23/05/2019 17:34:20 LOG -------------filled the username and passwords to the fields successfully
+23/05/2019 17:34:20 LOG -------------Click on the Login button to login to the system
+23/05/2019 17:34:21 LOG Verify click Login button in Loyal page
+23/05/2019 17:34:22 LOG Successfully clicked Login button in Loyal page
+23/05/2019 17:34:22 LOG -------------Going to Put a URL to the browser which is opened
+23/05/2019 17:34:24 LOG -------------URL Loaded successfully
+23/05/2019 17:34:24 LOG -------------Going to fill the username and passwords to the fields
+23/05/2019 17:34:25 LOG -------------filled the username and passwords to the fields successfully
+23/05/2019 17:34:25 LOG -------------Click on the Login button to login to the system
+23/05/2019 17:34:26 LOG Verify click Login button in Loyal page
+23/05/2019 17:34:26 LOG Successfully clicked Login button in Loyal page
+23/05/2019 17:34:26 LOG -------------Going to Put a URL to the browser which is opened
+23/05/2019 17:34:28 LOG -------------URL Loaded successfully
+23/05/2019 17:34:28 LOG -------------Going to fill the username and passwords to the fields
+23/05/2019 17:34:29 LOG -------------filled the username and passwords to the fields successfully
+23/05/2019 17:34:29 LOG -------------Click on the Login button to login to the system
+23/05/2019 17:34:30 LOG Verify click Login button in Loyal page
+23/05/2019 17:34:30 LOG Successfully clicked Login button in Loyal page
+23/05/2019 17:34:31 LOG -------------Logged into the system successfully
+23/05/2019 17:34:31 LOG ------------Click on the Register client button on leftside menu bar
+23/05/2019 17:34:37 LOG Verify click Register client button in 
+23/05/2019 17:34:37 LOG Successfully clicked Register client button in 
+23/05/2019 17:34:37 LOG ------------Clicked on the Register client button on leftside menu bar successfully
+23/05/2019 17:34:40 LOG --------------------register client page loaded successfully
+23/05/2019 17:34:40 LOG -------------Going to fill the Parent name to the field to create a new parent
+23/05/2019 17:34:40 LOG Verify fill search criteria of 
+23/05/2019 17:34:40 LOG Successfully filled search criteria of 
+23/05/2019 17:34:40 LOG -------------Filled the Parent name to the field successfully
+23/05/2019 17:34:40 LOG ------------Click on the Register client button on leftside menu bar
+23/05/2019 17:34:46 LOG Verify click Add new Parent button in 
+23/05/2019 17:34:46 LOG Successfully clicked Add new Parent button in 
+23/05/2019 17:34:46 LOG ------------Clicked on the Register client button on leftside menu bar successfully
+23/05/2019 17:34:46 LOG -------------I should see the newly enabled Add new parent tab
+23/05/2019 17:34:49 LOG --------------------enabled Add new parent tab successfully
+23/05/2019 17:34:49 LOG column values--->value
+23/05/2019 17:34:49 LOG column values--->firstName
+23/05/2019 17:34:49 LOG column values--->lastName
+23/05/2019 17:34:49 LOG column values--->phoneEmail
+23/05/2019 17:34:49 LOG rawData-------------->      | Element    | value                             | option | ElementType |
+      | firstName  | scot                              | name   | Textbox     |
+      | lastName   | stiris                            | name   | Textbox     |
+      | phoneEmail | e25mediatest+668@eight25media.com | name   | Textbox     |
+
+23/05/2019 17:34:49 LOG Verify fill search criteria of 
+23/05/2019 17:34:51 LOG Successfully filled search criteria of 
+23/05/2019 17:34:51 LOG ------------Click on the create_a_pet
+23/05/2019 17:34:57 LOG Verify click Add New Pet button in 
+23/05/2019 17:34:57 LOG Successfully clicked Add New Pet button in 
+23/05/2019 17:34:57 LOG ------------Clicked on the create_a_pet
+23/05/2019 17:34:57 LOG -------------I should see the newly enabled Add new pet tab
+23/05/2019 17:34:59 LOG --------------------enabled Add new pet tab successfully
+23/05/2019 17:35:00 LOG ------------Click on the save parent button
+23/05/2019 17:35:06 LOG Verify click Save button in 
+23/05/2019 17:35:06 LOG Successfully clicked Save button in 
+23/05/2019 17:35:06 LOG ------------Save parent button clicked successfully
+23/05/2019 17:35:06 LOG -------------I should see the popup message Parent successfully saved and invited
+23/05/2019 17:35:19 LOG no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'Parent successfully saved and invited')]"}
+  (Session info: chrome=74.0.3729.157)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'THILINA-MOBILE', ip: '169.254.93.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\THILIN~1\AppData\Local\Temp\scoped_dir14132_24089}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=74.0.3729.157, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: d306e4796ddd4e8ae8c75c4b2c972904
+*** Element info: {Using=xpath, value=//p[contains(text(),'Parent successfully saved and invited')]}
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'Parent successfully saved and invited')]"}
+  (Session info: chrome=74.0.3729.157)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'THILINA-MOBILE', ip: '169.254.93.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\THILIN~1\AppData\Local\Temp\scoped_dir14132_24089}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=74.0.3729.157, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: d306e4796ddd4e8ae8c75c4b2c972904
+*** Element info: {Using=xpath, value=//p[contains(text(),'Parent successfully saved and invited')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.cucumber.common.SetElements.ValidationMessage(SetElements.java:1209)
+	at com.cucumber.definition.admin.RegisterClient.i_should_see_the_confirm_the_parent_created_sucessfully(RegisterClient.java:252)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.ExtendedRuntime.runStep(ExtendedRuntime.java:316)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedExecutionUnitRunner.run(ExtendedExecutionUnitRunner.java:32)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedFeatureRunner.runChild(ExtendedFeatureRunner.java:99)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedFeatureRunner.runChild(ExtendedFeatureRunner.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedCucumber.runChild(ExtendedCucumber.java:108)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedCucumber.runChild(ExtendedCucumber.java:32)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedCucumber.run(ExtendedCucumber.java:148)
+	at com.cucumber.common.ExtraExtendedCucumber.run(ExtraExtendedCucumber.java:37)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:81)
+	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:69)
+	at org.testng.TestRunner$1.run(TestRunner.java:697)
+	at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:1004)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:728)
+	at org.testng.TestRunner.run(TestRunner.java:629)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+23/05/2019 17:35:20 LOG -------------Logged into the system successfully
+23/05/2019 17:35:35 LOG no such element: Unable to locate element: {"method":"css selector","selector":"#root > div.theme-light > div > main > div.container__wrap > div > div > div.card > div > div.board.minimize > div > div > div > span:nth-child(1) > section > div > div > div > article > div > div.name"}
+  (Session info: chrome=74.0.3729.157)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'THILINA-MOBILE', ip: '169.254.93.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\THILIN~1\AppData\Local\Temp\scoped_dir14132_24089}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=74.0.3729.157, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: d306e4796ddd4e8ae8c75c4b2c972904
+*** Element info: {Using=css selector, value=#root > div.theme-light > div > main > div.container__wrap > div > div > div.card > div > div.board.minimize > div > div > div > span:nth-child(1) > section > div > div > div > article > div > div.name}
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#root > div.theme-light > div > main > div.container__wrap > div > div > div.card > div > div.board.minimize > div > div > div > span:nth-child(1) > section > div > div > div > article > div > div.name"}
+  (Session info: chrome=74.0.3729.157)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'THILINA-MOBILE', ip: '169.254.93.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\THILIN~1\AppData\Local\Temp\scoped_dir14132_24089}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=74.0.3729.157, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: d306e4796ddd4e8ae8c75c4b2c972904
+*** Element info: {Using=css selector, value=#root > div.theme-light > div > main > div.container__wrap > div > div > div.card > div > div.board.minimize > div > div > div > span:nth-child(1) > section > div > div > div > article > div > div.name}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:501)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.cucumber.definition.admin.Dashboard.i_should_see_the_pet_appoinment_in_the_bashboard(Dashboard.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.ExtendedRuntime.runStep(ExtendedRuntime.java:316)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedExecutionUnitRunner.run(ExtendedExecutionUnitRunner.java:32)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedFeatureRunner.runChild(ExtendedFeatureRunner.java:99)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedFeatureRunner.runChild(ExtendedFeatureRunner.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedCucumber.runChild(ExtendedCucumber.java:108)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedCucumber.runChild(ExtendedCucumber.java:32)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at com.github.mkolisnyk.cucumber.runner.ExtendedCucumber.run(ExtendedCucumber.java:148)
+	at com.cucumber.common.ExtraExtendedCucumber.run(ExtraExtendedCucumber.java:37)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:81)
+	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:69)
+	at org.testng.TestRunner$1.run(TestRunner.java:697)
+	at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:1004)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:728)
+	at org.testng.TestRunner.run(TestRunner.java:629)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+23/05/2019 17:35:41 LOG Starting to send mail
+23/05/2019 17:35:58 LOG Finished send mail

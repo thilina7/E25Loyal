@@ -1,34 +1,16 @@
 [
   {
-    "source": "^I should click the \"([^\"]*)\" button on the left menu bar$",
-    "steps": [
-      {
-        "name": "I should click the \"Pet tracking board\" button on the left menu bar",
-        "aggregatedDurations": {
-          "average": 6.2755809,
-          "median": 6.2755809
-        },
-        "durations": [
-          {
-            "duration": 6.2755809,
-            "location": "B_RegisterClient.feature:36"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "source": "^\"([^\"]*)\" Tab should enable after click the Add new parent button$",
     "steps": [
       {
         "name": "\"Register new parent\" Tab should enable after click the Add new parent button",
         "aggregatedDurations": {
-          "average": 2.0999695,
-          "median": 2.0999695
+          "average": 2.091599801,
+          "median": 2.091599801
         },
         "durations": [
           {
-            "duration": 2.0999695,
+            "duration": 2.091599801,
             "location": "B_RegisterClient.feature:16"
           }
         ]
@@ -41,12 +23,12 @@
       {
         "name": "I fill the \"Find parent\" details to create a new Parent",
         "aggregatedDurations": {
-          "average": 0.5598308,
-          "median": 0.5598308
+          "average": 0.7202914,
+          "median": 0.7202914
         },
         "durations": [
           {
-            "duration": 0.5598308,
+            "duration": 0.7202914,
             "location": "B_RegisterClient.feature:9"
           }
         ]
@@ -59,12 +41,12 @@
       {
         "name": "I should click on \"Register client\" button on left side menu",
         "aggregatedDurations": {
-          "average": 6.2305161,
-          "median": 6.2305161
+          "average": 6.288721699,
+          "median": 6.288721699
         },
         "durations": [
           {
-            "duration": 6.2305161,
+            "duration": 6.288721699,
             "location": "B_RegisterClient.feature:5"
           }
         ]
@@ -77,12 +59,12 @@
       {
         "name": "I click on the \"Add new Parent\" button to add a new parent",
         "aggregatedDurations": {
-          "average": 6.2331005,
-          "median": 6.2331005
+          "average": 6.2224262,
+          "median": 6.2224262
         },
         "durations": [
           {
-            "duration": 6.2331005,
+            "duration": 6.2224262,
             "location": "B_RegisterClient.feature:13"
           }
         ]
@@ -95,12 +77,12 @@
       {
         "name": "I should redirect to the Register Client page successfullyy",
         "aggregatedDurations": {
-          "average": 2.094885,
-          "median": 2.094885
+          "average": 2.060045399,
+          "median": 2.060045399
         },
         "durations": [
           {
-            "duration": 2.094885,
+            "duration": 2.060045399,
             "location": "B_RegisterClient.feature:8"
           }
         ]
@@ -113,31 +95,13 @@
       {
         "name": "I click on the \"Save\" button to create a new parent",
         "aggregatedDurations": {
-          "average": 6.2216332,
-          "median": 6.2216332
+          "average": 6.266892,
+          "median": 6.266892
         },
         "durations": [
           {
-            "duration": 6.2216332,
-            "location": "B_RegisterClient.feature:27"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^I should load \"([^\"]*)\" the URL of \"([^\"]*)\" URL to the Browser$",
-    "steps": [
-      {
-        "name": "I should load \"\" the URL of \"Loyal Login\" URL to the Browser",
-        "aggregatedDurations": {
-          "average": 7.4591573,
-          "median": 7.4591573
-        },
-        "durations": [
-          {
-            "duration": 7.4591573,
-            "location": "A_LoginToLoyal.feature:4"
+            "duration": 6.266892,
+            "location": "B_RegisterClient.feature:33"
           }
         ]
       }
@@ -149,13 +113,13 @@
       {
         "name": "I should see the excel data \"RegisterClient\"",
         "aggregatedDurations": {
-          "average": 2.1872284,
-          "median": 2.1872284
+          "average": 2.153935801,
+          "median": 2.153935801
         },
         "durations": [
           {
-            "duration": 2.1872284,
-            "location": "B_RegisterClient.feature:22"
+            "duration": 2.153935801,
+            "location": "B_RegisterClient.feature:17"
           }
         ]
       }
@@ -167,12 +131,12 @@
       {
         "name": "I should see the newly enabled \"No parent record found?\" label on left hand side",
         "aggregatedDurations": {
-          "average": 0.000095,
-          "median": 0.000095
+          "average": 0.0001207,
+          "median": 0.0001207
         },
         "durations": [
           {
-            "duration": 0.000095,
+            "duration": 0.0001207,
             "location": "B_RegisterClient.feature:12"
           }
         ]
@@ -185,53 +149,17 @@
       {
         "name": "I Should see the Loyal login page loaded sucessfullyy",
         "aggregatedDurations": {
-          "average": 1.0285836,
-          "median": 1.0285836
+          "average": 1.1204613,
+          "median": 1.1204613
         },
         "durations": [
           {
-            "duration": 1.0259264,
+            "duration": 1.1575497,
             "location": "B_RegisterClient.feature:4"
           },
           {
-            "duration": 1.0312408,
+            "duration": 1.083372901,
             "location": "C_Dashboard.feature:4"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^I should see the pet appoinment \"([^\"]*)\" in the bashboard$",
-    "steps": [
-      {
-        "name": "I should see the pet appoinment \"\" in the bashboard",
-        "aggregatedDurations": {
-          "average": 10.4495927,
-          "median": 10.4495927
-        },
-        "durations": [
-          {
-            "duration": 10.4495927,
-            "location": "C_Dashboard.feature:5"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "^I should see the \"([^\"]*)\" confirm the parent created sucessfully$",
-    "steps": [
-      {
-        "name": "I should see the \"Parent successfully saved and invited\" confirm the parent created sucessfully",
-        "aggregatedDurations": {
-          "average": 3.0940277,
-          "median": 3.0940277
-        },
-        "durations": [
-          {
-            "duration": 3.0940277,
-            "location": "B_RegisterClient.feature:30"
           }
         ]
       }
@@ -243,12 +171,20 @@
       {
         "name": "I should click the \"Login\" button to login to the \"Loyal page\"",
         "aggregatedDurations": {
-          "average": 1.2059201,
-          "median": 1.2059201
+          "average": 1.254773633,
+          "median": 1.204828299
         },
         "durations": [
           {
-            "duration": 1.2059201,
+            "duration": 1.361877201,
+            "location": "A_LoginToLoyal.feature:8"
+          },
+          {
+            "duration": 1.197615401,
+            "location": "A_LoginToLoyal.feature:8"
+          },
+          {
+            "duration": 1.204828299,
             "location": "A_LoginToLoyal.feature:8"
           }
         ]
@@ -256,18 +192,98 @@
     ]
   },
   {
-    "source": "^I click on the ok button of the \"([^\"]*)\" validation message$",
+    "source": "^I fill the \"([^\"]*)\" details from excel data \"([^\"]*)\"$",
     "steps": [
       {
-        "name": "I click on the ok button of the \"Parent successfully saved and invited\" validation message",
+        "name": "I fill the \"Register New Pet\" details from excel data \"RegisterClient\"",
         "aggregatedDurations": {
-          "average": 6.1707922,
-          "median": 6.1707922
+          "average": 0.396347501,
+          "median": 0.396347501
         },
         "durations": [
           {
-            "duration": 6.1707922,
-            "location": "B_RegisterClient.feature:33"
+            "duration": 0.396347501,
+            "location": "B_RegisterClient.feature:26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I fill the \"([^\"]*)\" and \"([^\"]*)\" in the fields to logged into the application$",
+    "steps": [
+      {
+        "name": "I fill the \"test123\" and \"pass123\" in the fields to logged into the application",
+        "aggregatedDurations": {
+          "average": 13.185306699,
+          "median": 13.185306699
+        },
+        "durations": [
+          {
+            "duration": 13.185306699,
+            "location": "A_LoginToLoyal.feature:4"
+          }
+        ]
+      },
+      {
+        "name": "I fill the \"e25mediatest+520@eight25media.com\" and \"pass1234\" in the fields to logged into the application",
+        "aggregatedDurations": {
+          "average": 3.4065307,
+          "median": 3.4065307
+        },
+        "durations": [
+          {
+            "duration": 3.4065307,
+            "location": "A_LoginToLoyal.feature:4"
+          }
+        ]
+      },
+      {
+        "name": "I fill the \"e25mediatest+520@eight25media.com\" and \"Test1234\" in the fields to logged into the application",
+        "aggregatedDurations": {
+          "average": 2.3628183,
+          "median": 2.3628183
+        },
+        "durations": [
+          {
+            "duration": 2.3628183,
+            "location": "A_LoginToLoyal.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on the \"([^\"]*)\" to create a pet to the parent$",
+    "steps": [
+      {
+        "name": "I click on the \"Add New Pet\" to create a pet to the parent",
+        "aggregatedDurations": {
+          "average": 6.3095192,
+          "median": 6.3095192
+        },
+        "durations": [
+          {
+            "duration": 6.3095192,
+            "location": "B_RegisterClient.feature:22"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I should see the \"([^\"]*)\" tab after clicking the button$",
+    "steps": [
+      {
+        "name": "I should see the \"Register New Pet\" tab after clicking the button",
+        "aggregatedDurations": {
+          "average": 2.111447099,
+          "median": 2.111447099
+        },
+        "durations": [
+          {
+            "duration": 2.111447099,
+            "location": "B_RegisterClient.feature:25"
           }
         ]
       }

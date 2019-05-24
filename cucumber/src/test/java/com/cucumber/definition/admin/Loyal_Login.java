@@ -3,15 +3,22 @@ package com.cucumber.definition.admin;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import org.apache.bcel.classfile.Constant;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.cucumber.admin.AdminAppLogin;
 import com.cucumber.common.CommonSteps;
 import com.cucumber.common.ConfigFileReader;
+import com.cucumber.common.Constants;
 import com.cucumber.common.SetElements;
 import com.cucumber.common.WebDriverInitializer;
 
@@ -71,22 +78,24 @@ public class Loyal_Login {
 		}
 
 	}
-	
+
 	@Given("^I should click the \"([^\"]*)\" button to login to the \"([^\"]*)\"$")
 	public void i_should_click_the_button_to_login_to_the(String arg1, String arg2, DataTable table) throws Throwable {
 
-		//commonSteps.clickOnButtonIn(arg1, arg2, table);
+		System.out.println("page name is in login page--> " + webDriver.getTitle());
+
+		// commonSteps.clickOnButtonIn(arg1, arg2, table);
 		try {
 			log.debug("-------------Click on the Login button to login to the system");
 			commonSteps.clickOnButtonIn(arg1, arg2, table);
 			
+
 		} catch (Exception e) {
 
 			log.error(e.getMessage(), e);
 			throw (e);
 		}
 	}
-	
 
 	/*
 	 * @Given("^I Should see the Loyal login page loaded sucessfully$") public void
@@ -109,8 +118,35 @@ public class Loyal_Login {
 	 * 
 	 * }
 	 */
-	
+	@Given("^I fill the \"([^\"]*)\" and \"([^\"]*)\" in the fields to logged into the application$")
+	public void i_fill_the_and_in_the_fields_to_logged_into_the_application(String arg1, String arg2, DataTable table) throws Throwable {
+	  	
+		try {
+			List<List<String>> TableRaw = table.raw();
+			
+			log.debug("-------------Going to Put a URL to the browser which is opened");
+			adminAppLogin.applicationLogin(arg1, arg2);
+			
+			log.debug("-------------URL Loaded successfully");
+			
+			log.debug("-------------Going to fill the username and passwords to the fields");
 
-	
+			setElements.setElementByName(TableRaw.get(1).get(2),arg1, TableRaw.get(1).get(0));
+			
+			setElements.setElementByName(TableRaw.get(2).get(2), arg2, TableRaw.get(2).get(0));
+			
+			System.out.println("TableRaw.get(0).get(1) "+TableRaw.get(2).get(0)+ "arg2 "+arg2);
+			
+			log.debug("-------------filled the username and passwords to the fields successfully");
+			
+		} catch (Exception e) {
+
+			log.error(e.getMessage(), e);
+			throw (e);
+			
+		}
+
+		
+	}
 
 }

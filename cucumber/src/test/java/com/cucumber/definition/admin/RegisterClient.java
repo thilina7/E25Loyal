@@ -12,6 +12,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import com.cucumber.common.CommonSteps;
 import com.cucumber.common.ConfigFileReader;
@@ -46,10 +47,11 @@ public class RegisterClient {
 
 		// waiting to capture a screenshot
 		Thread.sleep(1000);
-
+		Boolean logout = webDriver.findElement(By.cssSelector(".logout_btn")).isDisplayed();
+		System.out.println("logout status---->"+logout);
 		try {
-			String PageName = "Loyal";
-			if (PageName.equalsIgnoreCase("Loyal")) {
+			//String PageName = "Loyal";
+			if (logout) {
 
 				log.debug("-------------Logged into the system successfully");
 
@@ -161,8 +163,6 @@ public class RegisterClient {
 			Thread.sleep(2000);
 			if (webDriver.findElement(By.xpath("//h3[contains(text(),'Register New Parent')]")).getText()
 					.equalsIgnoreCase("Register New Parent")) {
-				System.out.println("testinf             saaaaaaaaaaaaa "
-						+ webDriver.findElement(By.xpath("//h3[contains(text(),'Register New Parent')]")).getText());
 				System.out.println("--------------------enabled Add new parent tab successfully");
 				log.debug("--------------------enabled Add new parent tab successfully");
 
@@ -256,17 +256,20 @@ public class RegisterClient {
 	@Then("^I should see the excel data \"([^\"]*)\"$")
 	public void i_should_see_the_excel_data(String sheet, DataTable table) throws Throwable {
 
+		DataTable modifications = setElements.GetExcelValueDataTable(sheet, table);
 		
-		List<List<String>> Query2 =  table.raw();
+		commonSteps.ExceldataCriteriaOf(sheet, "", modifications);
+		
+		/*List<List<String>> Query2 =  table.raw();
 		
 		System.out.println("**Query2** "+Query2);
-		ArrayList<ArrayList<String>> a1 = new ArrayList<>();
-		ArrayList<String> a2 = new ArrayList<>();
+//		ArrayList<ArrayList<String>> a1 = new ArrayList<>();
+//		ArrayList<String> a2 = new ArrayList<>();
 		List<List<String>> rawData = new ArrayList<List<String>>();
 		System.out.println("Query2.size()---"+Query2.size());
 		for(int i=0;i<Query2.size();i++){
 			System.out.println("Query2.get(i).get(0)--->"+Query2.get(i).get(0));
-			String SearchValue= setElements.GetExcelValue(Query2.get(i).get(0));
+			String SearchValue= setElements.GetExcelValue(Query2.get(i).get(0),sheet);
 			System.out.println("Query coloumn after Edit:  "+SearchValue);
 			
 				//rawData = Arrays.asList(Arrays.asList( Query2.get(i).get(1),SearchValue, Query2.get(i).get(2), Query2.get(i).get(3)));
@@ -280,7 +283,7 @@ public class RegisterClient {
 			System.out.println("rawData-------------->"+modifications);		
 			
 			commonSteps.ExceldataCriteriaOf(sheet, "", modifications);
-		
+		*/
 		
 	}
 
@@ -323,4 +326,62 @@ public class RegisterClient {
 		
 	}
 
+	@Then("^I click on the \"([^\"]*)\" to create a pet to the parent$")
+	public void i_click_on_the_to_create_a_pet_to_the_parent(String arg1, DataTable table) throws Throwable {
+	    
+		try {
+			System.out.println("------------Click on the create_a_pet");
+			log.debug("------------Click on the create_a_pet");
+			Thread.sleep(5000);
+			commonSteps.clickOnButtonIn(arg1, "", table);
+			log.debug("------------Clicked on the create_a_pet");
+
+		} catch (Exception e) {
+			System.out.println("--------------------fail to Click on the create_a_pet");
+			log.error(e.getMessage(), e);
+			throw (e);
+		}
+		
+	}
+
+	@Then("^I should see the \"([^\"]*)\" tab after clicking the button$")
+	public void i_should_see_the_tab_after_clicking_the_button(String arg1) throws Throwable {
+	    
+		try {
+			System.out.println("------------I should see the newly enabled Add new pet tab");
+			log.debug("-------------I should see the newly enabled Add new pet tab");
+			Thread.sleep(2000);
+			if (webDriver.findElement(By.xpath("//h3[contains(text(),'Register New Pet')]")).getText()
+					.equalsIgnoreCase("Register New Pet")) {
+				System.out.println("--------------------enabled Add new pet tab successfully");
+				log.debug("--------------------enabled Add new pet tab successfully");
+
+			} else {
+
+				log.debug("--------------------Fail to enabled Add new pet tab");
+				assertTrue("--------------------Fail to enabled Add new pet tab", false);
+
+			}
+		} catch (Exception e) {
+			System.out.println("--------------------Fail to enabled Add new pet tab");
+			log.error(e.getMessage(), e);
+			throw (e);
+		}
+		// .find-parent-wrapper
+		
+		//h3[contains(text(),'Register New Pet')]
+		
+	}
+
+	@Then("^I fill the \"([^\"]*)\" details from excel data \"([^\"]*)\"$")
+	public void i_fill_the_details_from_excel_data(String arg1, String sheet, DataTable table) throws Throwable {
+		
+		  DataTable modifications = setElements.GetExcelValueDataTable(sheet, table);
+		  
+		  commonSteps.ExceldataCriteriaOf(sheet, "", modifications);
+		 
+	
+		 
+	}
+	
 }
