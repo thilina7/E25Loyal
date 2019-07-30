@@ -50,11 +50,11 @@ public class Loyal_Login {
 	public void i_should_load_the_URL_of_URL_to_the_Browser(String arg1, String arg2, DataTable table)
 			throws Throwable {
 		// adminAppLogin.applicationLogin(arg1, arg2);
+/*
 
-		/*
 		 * Thread.sleep(5000); System.out.println("WEB DRIVER---------->"+webDriver);
 		 * System.out.println("before URL LOAD---------->");
-		 * webDriver.navigate().to(configFileReader.getLoginPageUrl());
+		  webDriver.navigate().to(configFileReader.getLoginPageUrl());
 		 * System.out.println("AFTER URL LOAD---------->"); Thread.sleep(10000);
 		 * System.out.println("before capture the Name click---------->");
 		 * webDriver.findElement(By.xpath(

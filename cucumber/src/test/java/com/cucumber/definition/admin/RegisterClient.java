@@ -7,9 +7,12 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import javax.security.auth.kerberos.KerberosKey;
+
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -48,9 +51,9 @@ public class RegisterClient {
 		// waiting to capture a screenshot
 		Thread.sleep(1000);
 		Boolean logout = webDriver.findElement(By.cssSelector(".logout_btn")).isDisplayed();
-		System.out.println("logout status---->"+logout);
+		System.out.println("logout status---->" + logout);
 		try {
-			//String PageName = "Loyal";
+
 			if (logout) {
 
 				log.debug("-------------Logged into the system successfully");
@@ -246,6 +249,7 @@ public class RegisterClient {
 	 * 
 	 * }
 	 */
+	
 	@Then("^I should see the \"([^\"]*)\" confirm the parent created sucessfully$")
 	public void i_should_see_the_confirm_the_parent_created_sucessfully(String arg1, DataTable Table) throws Throwable {
 
@@ -257,40 +261,40 @@ public class RegisterClient {
 	public void i_should_see_the_excel_data(String sheet, DataTable table) throws Throwable {
 
 		DataTable modifications = setElements.GetExcelValueDataTable(sheet, table);
-		
-		commonSteps.ExceldataCriteriaOf(sheet, "", modifications);
-		
-		/*List<List<String>> Query2 =  table.raw();
-		
-		System.out.println("**Query2** "+Query2);
-//		ArrayList<ArrayList<String>> a1 = new ArrayList<>();
-//		ArrayList<String> a2 = new ArrayList<>();
-		List<List<String>> rawData = new ArrayList<List<String>>();
-		System.out.println("Query2.size()---"+Query2.size());
-		for(int i=0;i<Query2.size();i++){
-			System.out.println("Query2.get(i).get(0)--->"+Query2.get(i).get(0));
-			String SearchValue= setElements.GetExcelValue(Query2.get(i).get(0),sheet);
-			System.out.println("Query coloumn after Edit:  "+SearchValue);
-			
-				//rawData = Arrays.asList(Arrays.asList( Query2.get(i).get(1),SearchValue, Query2.get(i).get(2), Query2.get(i).get(3)));
-				List<String> middle = Arrays.asList( Query2.get(i).get(0),SearchValue, Query2.get(i).get(2), Query2.get(i).get(3));
-			
-				rawData.add(middle);
-		  
-		 
-		}
-		 DataTable modifications = DataTable.create(rawData);
-			System.out.println("rawData-------------->"+modifications);		
-			
-			commonSteps.ExceldataCriteriaOf(sheet, "", modifications);
-		*/
-		
-	}
 
+		commonSteps.ExceldataCriteriaOf(sheet, "", modifications);
+
+		/*
+		 * List<List<String>> Query2 = table.raw();
+		 * 
+		 * System.out.println("**Query2** "+Query2); // ArrayList<ArrayList<String>> a1
+		 * = new ArrayList<>(); // ArrayList<String> a2 = new ArrayList<>();
+		 * List<List<String>> rawData = new ArrayList<List<String>>();
+		 * System.out.println("Query2.size()---"+Query2.size()); for(int
+		 * i=0;i<Query2.size();i++){
+		 * System.out.println("Query2.get(i).get(0)--->"+Query2.get(i).get(0)); String
+		 * SearchValue= setElements.GetExcelValue(Query2.get(i).get(0),sheet);
+		 * System.out.println("Query coloumn after Edit:  "+SearchValue);
+		 * 
+		 * //rawData = Arrays.asList(Arrays.asList( Query2.get(i).get(1),SearchValue,
+		 * Query2.get(i).get(2), Query2.get(i).get(3))); List<String> middle =
+		 * Arrays.asList( Query2.get(i).get(0),SearchValue, Query2.get(i).get(2),
+		 * Query2.get(i).get(3));
+		 * 
+		 * rawData.add(middle);
+		 * 
+		 * 
+		 * } DataTable modifications = DataTable.create(rawData);
+		 * System.out.println("rawData-------------->"+modifications);
+		 * 
+		 * commonSteps.ExceldataCriteriaOf(sheet, "", modifications);
+		 */
+
+	}
 
 	@Then("^I should click the \"([^\"]*)\" button on the left menu bar$")
 	public void i_should_click_the_button_on_the_left_menu_bar(String arg1, DataTable table) throws Throwable {
-	   
+
 		try {
 			System.out.println("------------Click on the pet tracking board on the left menu bar");
 			log.debug("------------Click on the pet tracking board on the left menu bar");
@@ -304,12 +308,11 @@ public class RegisterClient {
 			throw (e);
 		}
 
-		
 	}
-	
+
 	@Given("^I click on the ok button of the \"([^\"]*)\" validation message$")
 	public void i_click_on_the_ok_button_of_the_validation_message(String arg1, DataTable table) throws Throwable {
-	    
+
 		try {
 			System.out.println("------------Click on the ok_button_of_the_validation_message");
 			log.debug("------------Click on the ok_button_of_the_validation_message");
@@ -323,12 +326,11 @@ public class RegisterClient {
 			throw (e);
 		}
 
-		
 	}
 
 	@Then("^I click on the \"([^\"]*)\" to create a pet to the parent$")
 	public void i_click_on_the_to_create_a_pet_to_the_parent(String arg1, DataTable table) throws Throwable {
-	    
+
 		try {
 			System.out.println("------------Click on the create_a_pet");
 			log.debug("------------Click on the create_a_pet");
@@ -341,12 +343,12 @@ public class RegisterClient {
 			log.error(e.getMessage(), e);
 			throw (e);
 		}
-		
+
 	}
 
 	@Then("^I should see the \"([^\"]*)\" tab after clicking the button$")
 	public void i_should_see_the_tab_after_clicking_the_button(String arg1) throws Throwable {
-	    
+
 		try {
 			System.out.println("------------I should see the newly enabled Add new pet tab");
 			log.debug("-------------I should see the newly enabled Add new pet tab");
@@ -368,20 +370,34 @@ public class RegisterClient {
 			throw (e);
 		}
 		// .find-parent-wrapper
-		
-		//h3[contains(text(),'Register New Pet')]
-		
+
+		// h3[contains(text(),'Register New Pet')]
+
 	}
 
 	@Then("^I fill the \"([^\"]*)\" details from excel data \"([^\"]*)\"$")
 	public void i_fill_the_details_from_excel_data(String arg1, String sheet, DataTable table) throws Throwable {
 		
-		  DataTable modifications = setElements.GetExcelValueDataTable(sheet, table);
-		  
-		  commonSteps.ExceldataCriteriaOf(sheet, "", modifications);
-		 
-	
-		 
+		/*
+		 * Thread.sleep(5000); WebElement test = webDriver.findElement(By.
+		 * xpath("//*[contains(concat( \" \", @class, \" \" ), concat( \" \", \"Select-placeholder\", \" \" ))]"
+		 * )); test.click();
+		 * 
+		 * List<WebElement> drop_down =webDriver.findElements(By.
+		 * xpath("//*[contains(concat( \" \", @class, \" \" ), concat( \" \", \"Select-placeholder\", \" \" ))]"
+		 * ));
+		 * 
+		 * 
+		 * System.out.println("options--->"+drop_down);
+		 * //test.sendKeys(Keys.ARROW_DOWN);
+		 */
+		
+		DataTable modifications = setElements.GetExcelValueDataTable(sheet, table);
+
+		commonSteps.ExceldataCriteriaOf(sheet, "", modifications); 
+		
+		
+
 	}
-	
+
 }

@@ -597,6 +597,19 @@ public class SetElements {
 
 	}
 
+	
+	/**
+	 * get the Search values from the searched section
+	 * 
+	 */
+	public String GetValuesFromSearch(String sClass) {
+		waitElementClickableByClassName(sClass);
+		String SeachedValue= driver.findElement(By.className(sClass)).getText();
+		
+		return SeachedValue;
+	}
+
+	
 	public boolean selectByPartOfVisibleText(String sName, String value) {
 		String fullValue = "";
 		Boolean status = false;

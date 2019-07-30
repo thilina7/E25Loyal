@@ -96,7 +96,7 @@ formatter.examples({
     },
     {
       "cells": [
-        "e25mediatest+520@eight25media.com",
+        "e25mediatest+1622@eight25media.com",
         "pass1234"
       ],
       "line": 16,
@@ -104,7 +104,7 @@ formatter.examples({
     },
     {
       "cells": [
-        "e25mediatest+520@eight25media.com",
+        "e25mediatest+1622@eight25media.com",
         "Test1234"
       ],
       "line": 17,
@@ -114,7 +114,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 6454484601,
+  "duration": 7684404600,
   "status": "passed"
 });
 formatter.scenario({
@@ -195,7 +195,7 @@ formatter.match({
   "location": "Loyal_Login.i_fill_the_and_in_the_fields_to_logged_into_the_application(String,String,DataTable)"
 });
 formatter.result({
-  "duration": 13185306699,
+  "duration": 8119820800,
   "status": "passed"
 });
 formatter.match({
@@ -212,15 +212,15 @@ formatter.match({
   "location": "Loyal_Login.i_should_click_the_button_to_login_to_the(String,String,DataTable)"
 });
 formatter.result({
-  "duration": 1361877201,
+  "duration": 1307342900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 9736200,
+  "duration": 10579700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 105800,
+  "duration": 87100,
   "status": "passed"
 });
 formatter.scenario({
@@ -233,7 +233,7 @@ formatter.scenario({
 });
 formatter.step({
   "line": 4,
-  "name": "I fill the \"e25mediatest+520@eight25media.com\" and \"pass1234\" in the fields to logged into the application",
+  "name": "I fill the \"e25mediatest+1622@eight25media.com\" and \"pass1234\" in the fields to logged into the application",
   "matchedColumns": [
     0,
     1
@@ -290,18 +290,18 @@ formatter.step({
 formatter.match({
   "arguments": [
     {
-      "val": "e25mediatest+520@eight25media.com",
+      "val": "e25mediatest+1622@eight25media.com",
       "offset": 12
     },
     {
       "val": "pass1234",
-      "offset": 52
+      "offset": 53
     }
   ],
   "location": "Loyal_Login.i_fill_the_and_in_the_fields_to_logged_into_the_application(String,String,DataTable)"
 });
 formatter.result({
-  "duration": 3406530700,
+  "duration": 2931831200,
   "status": "passed"
 });
 formatter.match({
@@ -318,15 +318,15 @@ formatter.match({
   "location": "Loyal_Login.i_should_click_the_button_to_login_to_the(String,String,DataTable)"
 });
 formatter.result({
-  "duration": 1197615401,
+  "duration": 1380984600,
   "status": "passed"
 });
 formatter.after({
-  "duration": 12150199,
+  "duration": 10250400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 579600,
+  "duration": 89300,
   "status": "passed"
 });
 formatter.scenario({
@@ -339,7 +339,7 @@ formatter.scenario({
 });
 formatter.step({
   "line": 4,
-  "name": "I fill the \"e25mediatest+520@eight25media.com\" and \"Test1234\" in the fields to logged into the application",
+  "name": "I fill the \"e25mediatest+1622@eight25media.com\" and \"Test1234\" in the fields to logged into the application",
   "matchedColumns": [
     0,
     1
@@ -396,18 +396,18 @@ formatter.step({
 formatter.match({
   "arguments": [
     {
-      "val": "e25mediatest+520@eight25media.com",
+      "val": "e25mediatest+1622@eight25media.com",
       "offset": 12
     },
     {
       "val": "Test1234",
-      "offset": 52
+      "offset": 53
     }
   ],
   "location": "Loyal_Login.i_fill_the_and_in_the_fields_to_logged_into_the_application(String,String,DataTable)"
 });
 formatter.result({
-  "duration": 2362818300,
+  "duration": 2656605700,
   "status": "passed"
 });
 formatter.match({
@@ -424,11 +424,11 @@ formatter.match({
   "location": "Loyal_Login.i_should_click_the_button_to_login_to_the(String,String,DataTable)"
 });
 formatter.result({
-  "duration": 1204828299,
+  "duration": 1300512200,
   "status": "passed"
 });
 formatter.after({
-  "duration": 10089800,
+  "duration": 8834700,
   "status": "passed"
 });
 formatter.uri("B_RegisterClient.feature");
@@ -440,7 +440,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 100099,
+  "duration": 85900,
   "status": "passed"
 });
 formatter.scenario({
@@ -639,33 +639,33 @@ formatter.step({
       "line": 29
     },
     {
-      "cells": [
-        "//div[@class\u003d\u0027Select-placeholder selectorgadget_selected\u0027]",
-        "Breed",
-        "xpath,value",
-        "dropdown"
+      "comments": [
+        {
+          "line": 30,
+          "value": "#| //*[contains(concat( \" \", @class, \" \" ), concat( \" \", \"Select-placeholder\", \" \" ))] | Breed    | xpath,index | dropdown    |"
+        }
       ],
-      "line": 30
-    },
-    {
       "cells": [
         "gender",
         "Gender",
-        "id,value",
+        "id,index",
         "dropdown"
       ],
       "line": 31
+    },
+    {
+      "cells": [
+        "//div[@class\u003d\u0027Select-placeholder\u0027]",
+        "Herrytt",
+        "xpath",
+        "Textbox"
+      ],
+      "line": 32
     }
   ],
   "keyword": "And "
 });
 formatter.step({
-  "comments": [
-    {
-      "line": 32,
-      "value": "#| //div[@class\u003d\u0027Select-placeholder\u0027] | Herrytt | xpath  | Textbox     |"
-    }
-  ],
   "line": 33,
   "name": "I click on the \"Save\" button to create a new parent",
   "rows": [
@@ -755,7 +755,7 @@ formatter.match({
   "location": "RegisterClient.i_Should_see_the_Loyal_login_page_loaded_sucessfullyy()"
 });
 formatter.result({
-  "duration": 1157549700,
+  "duration": 1222126700,
   "status": "passed"
 });
 formatter.match({
@@ -768,14 +768,14 @@ formatter.match({
   "location": "RegisterClient.i_should_click_on_button_on_left_side_menu(String,DataTable)"
 });
 formatter.result({
-  "duration": 6288721699,
+  "duration": 6475209200,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterClient.i_should_redirect_to_the_Register_Client_page_successfullyy()"
 });
 formatter.result({
-  "duration": 2060045399,
+  "duration": 2097329800,
   "status": "passed"
 });
 formatter.match({
@@ -788,7 +788,7 @@ formatter.match({
   "location": "RegisterClient.i_fill_the_details_to_create_a_new_Parent(String,DataTable)"
 });
 formatter.result({
-  "duration": 720291400,
+  "duration": 654372000,
   "status": "passed"
 });
 formatter.match({
@@ -801,7 +801,7 @@ formatter.match({
   "location": "RegisterClient.i_should_see_the_newly_enabled_label_on_left_hand_side(String)"
 });
 formatter.result({
-  "duration": 120700,
+  "duration": 95500,
   "status": "passed"
 });
 formatter.match({
@@ -814,7 +814,7 @@ formatter.match({
   "location": "RegisterClient.i_click_on_the_button_to_add_a_new_parent(String,DataTable)"
 });
 formatter.result({
-  "duration": 6222426200,
+  "duration": 6407286200,
   "status": "passed"
 });
 formatter.match({
@@ -827,7 +827,7 @@ formatter.match({
   "location": "RegisterClient.tab_should_enable_after_click_the_Add_new_parent_button(String)"
 });
 formatter.result({
-  "duration": 2091599801,
+  "duration": 2083378700,
   "status": "passed"
 });
 formatter.match({
@@ -840,7 +840,7 @@ formatter.match({
   "location": "RegisterClient.i_should_see_the_excel_data(String,DataTable)"
 });
 formatter.result({
-  "duration": 2153935801,
+  "duration": 2548241000,
   "status": "passed"
 });
 formatter.match({
@@ -853,7 +853,7 @@ formatter.match({
   "location": "RegisterClient.i_click_on_the_to_create_a_pet_to_the_parent(String,DataTable)"
 });
 formatter.result({
-  "duration": 6309519200,
+  "duration": 6410153500,
   "status": "passed"
 });
 formatter.match({
@@ -866,7 +866,7 @@ formatter.match({
   "location": "RegisterClient.i_should_see_the_tab_after_clicking_the_button(String)"
 });
 formatter.result({
-  "duration": 2111447099,
+  "duration": 2069428000,
   "status": "passed"
 });
 formatter.match({
@@ -883,8 +883,9 @@ formatter.match({
   "location": "RegisterClient.i_fill_the_details_from_excel_data(String,String,DataTable)"
 });
 formatter.result({
-  "duration": 396347501,
-  "status": "passed"
+  "duration": 11655029600,
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class\u003d\u0027Select-placeholder\u0027] (tried for 5 second(s) with 500 MILLISECONDS interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)\r\n\tat com.cucumber.common.SetElements.waitElementVisibleByXpath(SetElements.java:228)\r\n\tat com.cucumber.common.SetElements.setElementByXpath(SetElements.java:117)\r\n\tat com.cucumber.common.CommonSteps.ExceldataCriteriaOf(CommonSteps.java:763)\r\n\tat com.cucumber.definition.admin.RegisterClient.i_fill_the_details_from_excel_data(RegisterClient.java:396)\r\n\tat ✽.And I fill the \"Register New Pet\" details from excel data \"RegisterClient\"(B_RegisterClient.feature:26)\r\nCaused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //div[@class\u003d\u0027Select-placeholder\u0027]\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027THILINA-MOBILE\u0027, ip: \u0027169.254.93.131\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)\r\n\tat java.util.Optional.orElseThrow(Optional.java:290)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)\r\n\tat com.cucumber.common.SetElements.waitElementVisibleByXpath(SetElements.java:228)\r\n\tat com.cucumber.common.SetElements.setElementByXpath(SetElements.java:117)\r\n\tat com.cucumber.common.CommonSteps.ExceldataCriteriaOf(CommonSteps.java:763)\r\n\tat com.cucumber.definition.admin.RegisterClient.i_fill_the_details_from_excel_data(RegisterClient.java:396)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.ExtendedRuntime.runStep(ExtendedRuntime.java:316)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\r\n\tat com.github.mkolisnyk.cucumber.runner.ExtendedExecutionUnitRunner.run(ExtendedExecutionUnitRunner.java:32)\r\n\tat com.github.mkolisnyk.cucumber.runner.ExtendedFeatureRunner.runChild(ExtendedFeatureRunner.java:99)\r\n\tat com.github.mkolisnyk.cucumber.runner.ExtendedFeatureRunner.runChild(ExtendedFeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat com.github.mkolisnyk.cucumber.runner.ExtendedCucumber.runChild(ExtendedCucumber.java:108)\r\n\tat com.github.mkolisnyk.cucumber.runner.ExtendedCucumber.runChild(ExtendedCucumber.java:32)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat com.github.mkolisnyk.cucumber.runner.ExtendedCucumber.run(ExtendedCucumber.java:148)\r\n\tat com.cucumber.common.ExtraExtendedCucumber.run(ExtraExtendedCucumber.java:37)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:115)\r\n\tat org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:81)\r\n\tat org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:69)\r\n\tat org.testng.TestRunner$1.run(TestRunner.java:697)\r\n\tat org.testng.TestRunner.runJUnitWorkers(TestRunner.java:1004)\r\n\tat org.testng.TestRunner.privateRunJUnit(TestRunner.java:728)\r\n\tat org.testng.TestRunner.run(TestRunner.java:629)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:366)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:268)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1169)\r\n\tat org.testng.TestNG.run(TestNG.java:1064)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)\r\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)\r\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -896,8 +897,7 @@ formatter.match({
   "location": "RegisterClient.i_click_on_the_button_to_create_a_new_parent(String,DataTable)"
 });
 formatter.result({
-  "duration": 6266892000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -909,9 +909,7 @@ formatter.match({
   "location": "RegisterClient.i_should_see_the_confirm_the_parent_created_sucessfully(String,DataTable)"
 });
 formatter.result({
-  "duration": 13062603000,
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//p[contains(text(),\u0027Parent successfully saved and invited\u0027)]\"}\n  (Session info: chrome\u003d74.0.3729.157)\n  (Driver info: chromedriver\u003d2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform\u003dWindows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 10.02 seconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027THILINA-MOBILE\u0027, ip: \u0027169.254.93.131\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, mobileEmulationEnabled\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir\u003dC:\\Users\\THILIN~1\\AppData\\Local\\Temp\\scoped_dir14132_24089}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, hasTouchScreen\u003dfalse, version\u003d74.0.3729.157, platform\u003dXP, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, acceptSslCerts\u003dfalse, acceptInsecureCerts\u003dfalse, locationContextEnabled\u003dtrue, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d}]\nSession ID: d306e4796ddd4e8ae8c75c4b2c972904\n*** Element info: {Using\u003dxpath, value\u003d//p[contains(text(),\u0027Parent successfully saved and invited\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)\r\n\tat com.cucumber.common.SetElements.ValidationMessage(SetElements.java:1209)\r\n\tat com.cucumber.definition.admin.RegisterClient.i_should_see_the_confirm_the_parent_created_sucessfully(RegisterClient.java:252)\r\n\tat ✽.And I should see the \"Parent successfully saved and invited\" confirm the parent created sucessfully(B_RegisterClient.feature:36)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -939,72 +937,298 @@ formatter.result({
 });
 formatter.embedding("image/png", "embedded0.png");
 formatter.after({
-  "duration": 400993100,
+  "duration": 344999400,
   "status": "passed"
 });
-formatter.uri("C_Dashboard.feature");
+formatter.uri("C_CreateAppoinment.feature");
 formatter.feature({
   "line": 1,
-  "name": "Dashboard testing",
+  "name": "Create appoinment for the Created parent",
   "description": "",
-  "id": "dashboard-testing",
+  "id": "create-appoinment-for-the-created-parent",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 197000,
+  "duration": 88500,
   "status": "passed"
 });
 formatter.scenario({
   "line": 3,
-  "name": "pet tracking board",
+  "name": "Createing a Appoinment",
   "description": "",
-  "id": "dashboard-testing;pet-tracking-board",
+  "id": "create-appoinment-for-the-created-parent;createing-a-appoinment",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
   "line": 4,
-  "name": "I Should see the Loyal login page loaded sucessfullyy",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 5,
-  "name": "I should see the pet appoinment \"\" in the bashboard",
+  "name": "I should click on the \"Create appoinment\" tab on left side menu",
   "rows": [
     {
       "cells": [
-        "",
-        ""
+        "Element",
+        "option"
+      ],
+      "line": 5
+    },
+    {
+      "cells": [
+        ".lnr-file-add",
+        "cssselector"
       ],
       "line": 6
+    }
+  ],
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 7,
+  "name": "I should redirect to the Create appoinment page successfullyy",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 8,
+  "name": "I fill the \"RegisterClient\" details to create a new Appoinment",
+  "rows": [
+    {
+      "cells": [
+        "Element",
+        "value",
+        "option",
+        "ElementType"
+      ],
+      "line": 9
+    },
+    {
+      "cells": [
+        "//*[contains(concat( \" \", @class, \" \" ), concat( \" \", \"form-control\", \" \" ))]",
+        "e25mediatest+668@eight25media.com",
+        "xpath",
+        "Textbox"
+      ],
+      "line": 10
+    }
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 11,
+  "name": "I should see the search results coming for the given Key word",
+  "rows": [
+    {
+      "cells": [
+        "email",
+        "e25mediatest+668@eight25media.com"
+      ],
+      "line": 12
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 13,
+  "name": "I click on the searched key word to get the values of the parent to create a new appoinment",
+  "rows": [
+    {
+      "cells": [
+        "Element",
+        "option"
+      ],
+      "line": 14
+    },
+    {
+      "cells": [
+        "email",
+        "e25mediatest+668@eight25media.com"
+      ],
+      "line": 15
+    }
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 16,
+  "name": "I should see the newly enabled \"Select A Pet\" sectionn",
+  "rows": [
+    {
+      "cells": [
+        "Locator",
+        "Topic name"
+      ],
+      "line": 17
+    },
+    {
+      "cells": [
+        "//h3[contains(text(),\u0027Select A Pet\u0027)]",
+        "Select A Pet"
+      ],
+      "line": 18
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 19,
+  "name": "I click on the pet in the first block \"Select A Pet\"",
+  "rows": [
+    {
+      "cells": [
+        "Element",
+        "option"
+      ],
+      "line": 20
+    },
+    {
+      "cells": [
+        ".checkmark",
+        "cssselector"
+      ],
+      "line": 21
+    }
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 22,
+  "name": "I should see the newly enabled Appointment \"Create New Appointment\" section",
+  "rows": [
+    {
+      "cells": [
+        "Locator",
+        "Topic name"
+      ],
+      "line": 23
+    },
+    {
+      "cells": [
+        "//h3[contains(text(),\u0027Create New Appointment\u0027)]",
+        "Create New Appointment"
+      ],
+      "line": 24
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 25,
+  "name": "I should fill the appoinment date on the create appoinment tab",
+  "rows": [
+    {
+      "cells": [
+        "Element",
+        "value",
+        "option",
+        "ElementType"
+      ],
+      "line": 26
+    },
+    {
+      "cells": [
+        "//input[@placeholder\u003d\u0027MM/DD/YYYY\u0027]",
+        "",
+        "xpath",
+        "textbox"
+      ],
+      "line": 27
     }
   ],
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterClient.i_Should_see_the_Loyal_login_page_loaded_sucessfullyy()"
+  "arguments": [
+    {
+      "val": "Create appoinment",
+      "offset": 23
+    }
+  ],
+  "location": "CreateAppoinment.i_should_click_on_the_tab_on_left_side_menu(String,DataTable)"
 });
 formatter.result({
-  "duration": 1083372901,
+  "duration": 6460174300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "CreateAppoinment.i_should_redirect_to_the_Create_appoinment_page_successfullyy()"
+});
+formatter.result({
+  "duration": 2161775200,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "",
-      "offset": 33
+      "val": "RegisterClient",
+      "offset": 12
     }
   ],
-  "location": "Dashboard.i_should_see_the_pet_appoinment_in_the_bashboard(String,DataTable)"
+  "location": "CreateAppoinment.i_fill_the_details_to_create_a_new_Appoinment(String,DataTable)"
 });
 formatter.result({
-  "duration": 15088908599,
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#root \u003e div.theme-light \u003e div \u003e main \u003e div.container__wrap \u003e div \u003e div \u003e div.card \u003e div \u003e div.board.minimize \u003e div \u003e div \u003e div \u003e span:nth-child(1) \u003e section \u003e div \u003e div \u003e div \u003e article \u003e div \u003e div.name\"}\n  (Session info: chrome\u003d74.0.3729.157)\n  (Driver info: chromedriver\u003d2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform\u003dWindows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 10.06 seconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027THILINA-MOBILE\u0027, ip: \u0027169.254.93.131\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, mobileEmulationEnabled\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir\u003dC:\\Users\\THILIN~1\\AppData\\Local\\Temp\\scoped_dir14132_24089}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, hasTouchScreen\u003dfalse, version\u003d74.0.3729.157, platform\u003dXP, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, acceptSslCerts\u003dfalse, acceptInsecureCerts\u003dfalse, locationContextEnabled\u003dtrue, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d}]\nSession ID: d306e4796ddd4e8ae8c75c4b2c972904\n*** Element info: {Using\u003dcss selector, value\u003d#root \u003e div.theme-light \u003e div \u003e main \u003e div.container__wrap \u003e div \u003e div \u003e div.card \u003e div \u003e div.board.minimize \u003e div \u003e div \u003e div \u003e span:nth-child(1) \u003e section \u003e div \u003e div \u003e div \u003e article \u003e div \u003e div.name}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:501)\r\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)\r\n\tat com.cucumber.definition.admin.Dashboard.i_should_see_the_pet_appoinment_in_the_bashboard(Dashboard.java:41)\r\n\tat ✽.And I should see the pet appoinment \"\" in the bashboard(C_Dashboard.feature:5)\r\n",
-  "status": "failed"
+  "duration": 1043583700,
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded1.png");
+formatter.match({
+  "location": "CreateAppoinment.i_should_see_the_search_results_coming_for_the_given_Key_word(DataTable)"
+});
+formatter.result({
+  "duration": 671470900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "CreateAppoinment.i_click_on_the_searched_key_word_to_get_the_values_of_the_parent_to_create_a_new_appoinment(DataTable)"
+});
+formatter.result({
+  "duration": 261409400,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Select A Pet",
+      "offset": 32
+    }
+  ],
+  "location": "CreateAppoinment.i_should_see_the_newly_enabled_sectionn(String,DataTable)"
+});
+formatter.result({
+  "duration": 2228282300,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Select A Pet",
+      "offset": 39
+    }
+  ],
+  "location": "CreateAppoinment.i_click_on_the_pet_in_the_first_block(String,DataTable)"
+});
+formatter.result({
+  "duration": 1295651400,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Create New Appointment",
+      "offset": 44
+    }
+  ],
+  "location": "CreateAppoinment.i_should_see_the_newly_enabled_Appointment_section(String,DataTable)"
+});
+formatter.result({
+  "duration": 2219265200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "CreateAppoinment.i_should_fill_the_appoinment_date_on_the_create_appoinment_tab(DataTable)"
+});
+formatter.result({
+  "duration": 1065398000,
+  "status": "passed"
+});
 formatter.after({
-  "duration": 365841800,
+  "duration": 8939200,
   "status": "passed"
 });
 });

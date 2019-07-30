@@ -602,6 +602,7 @@ public class CommonSteps {
 				log.debug("Verify fill search criteria of " + arg2);
 				for (int i = 1; i < data.size(); i++) {
 					String elementType = data.get(i).get(3).toLowerCase();
+					System.out.println("data.get(i).get(3)"+data.get(i).get(3));
 					String option = data.get(i).get(2).toLowerCase();
 					switch (elementType) {
 					case "dropdown":
@@ -662,7 +663,9 @@ public class CommonSteps {
 							setElement.setElementByName("TEXT", data.get(i).get(1), data.get(i).get(0));
 							break;
 						case "xpath":
+							System.out.println("in xpath section");
 							setElement.setElementByXpath("TEXT", data.get(i).get(1), data.get(i).get(0));
+							System.out.println("done xpath section"+data.get(i).get(0));
 							break;
 							
 						}
@@ -721,6 +724,15 @@ public class CommonSteps {
 								setElement.SelectXpathDropDownByValue(data.get(i).get(0), (data.get(i).get(1)));
 							}
 							break;
+						/*case "css":
+							if (optionValueTwo.equals("index")) {
+								setElement.SelectNamedDropDownByIndex(data.get(i).get(0),
+										Integer.parseInt(data.get(i).get(1)));
+							}
+							if (optionValueTwo.equals("value")) {
+								setElement.SelectNamedDropDownByValue(data.get(i).get(0), (data.get(i).get(1)));
+							}
+							break;*/
 						}
 						break;
 					case "click":

@@ -11,7 +11,15 @@ Feature: Login to loyal page
 
     #Given I Should see the Loyal login page loaded sucessfullyy
     Examples: 
-      | username                          | password |
-      | test123                           | pass123  |
-      | e25mediatest+520@eight25media.com | pass1234 |
-      | e25mediatest+520@eight25media.com | Test1234 |
+      | username                           | password |
+      | test123                            | pass123  |
+      | e25mediatest+1622@eight25media.com | pass1234 |
+      | e25mediatest+1622@eight25media.com | Test1234 |
+
+      
+      
+      
+      
+      
+      
+      

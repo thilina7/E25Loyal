@@ -24,12 +24,12 @@ Feature: Regiter Client
       | .add-new-top-panel-button | cssselector |
     And I should see the "Register New Pet" tab after clicking the button
     And I fill the "Register New Pet" details from excel data "RegisterClient"
-      | Element                                                    | value    | option      | ElementType |
-      | name                                                       | Pet Name | name        | Textbox     |
-      | species                                                    | Species  | id,index    | dropdown    |
-      | //div[@class='Select-placeholder selectorgadget_selected'] | Breed    | xpath,value | dropdown    |
-      | gender                                                     | Gender   | id,value    | dropdown    |
-    #| //div[@class='Select-placeholder'] | Herrytt | xpath  | Textbox     |
+      | Element                                                                             | value    | option      | ElementType |
+      | name                                                                                | Pet Name | name        | Textbox     |
+      | species                                                                             | Species  | id,index    | dropdown    |
+      #| //*[contains(concat( " ", @class, " " ), concat( " ", "Select-placeholder", " " ))] | Breed    | xpath,index | dropdown    |
+      | gender                                                                              | Gender   | id,index    | dropdown    |
+    | //div[@class='Select-placeholder'] | Herrytt | xpath  | Textbox     |
     And I click on the "Save" button to create a new parent
       | Element                                      | option |
       | //button[@class='btn loyal-btn-save-update'] | xpath  |
